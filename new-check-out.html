@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Herrkl&#228;der - M&#228;rkeskl&#228;der &amp; mode f&#246;r herr online - Stayhard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="icon" href="images/stayhard_logo.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/megamenu.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/footer-style.css">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/new-shoping-cart.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/new-check-out.css">
+</head>
+<body>
+	<header>
+
+		<div id="upper-bar">
+			<div id="upper-bar-container">
+
+				<!-- Dropdown list of the countries--> 
+				<div id="user-country">
+					<label for="selected-nation">
+						Skickas till:&nbsp;
+					</label>
+					<div id="selecting-user-nation">
+						<ul id="selected-nation">
+							<li>
+								<img src="images/flags/swedish.png">
+								<p>Sweden</p>
+							</li>
+						</ul>
+						<!-- List of countries to select from -->
+						<ul id="nations">
+							<li>
+								<img src="images/flags/austrian.png">
+								<p>Austria</p>
+							</li>
+							<li>
+								<img src="images/flags/belgiun.png">
+								<p>Belgium</p>
+							</li>
+							<li>
+								<img src="images/flags/bulgarian.jpg">
+								<p>Bulgaria</p>
+							</li>
+							<li id="default-user-nation">
+								<img src="images/flags/swedish.png">
+								<p>Sweden</p>
+							</li>
+						</ul>
+					</div>				
+				</div>
+
+				<!-- Info about the delivery -->
+				<div id="delivery-form">
+					<p>Fri frakt och fria returer</p>
+					<p>Snabba leveranser</p>
+					<p>Förlängd returrätt till 15 januari</p>
+				</div>
+
+				<!-- Customer service link-->
+				<div id="customer-service">
+					<a href="kontaktaoss.html">Kundservice</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="middle-bar">
+			<div id="middle-bar-container">
+				<div id="toggle-container">
+					<div id="clickable-toggle-area">
+						<!-- Toggle menu on mobile view -->
+						<input type="checkbox" id="toggle-menu-checkbox">			
+						<label id="toggle-menu-label" for="toggle-menu-checkbox"><span id="toggle-menu"></span></label>
+					</div>
+				</div>
+
+				<!--Offer counter clock, logo and shopping kart-->
+				<div id="offer-validity-counter">Offer valid up to</div>
+				<div id="logo">
+					<a href="index.html"><img src="images/stayhard_small.png" title="Stay Hard Logotype"></a>
+				</div>				
+				<div id="shopping-kart-div">
+					<i class="fas fa-search" id="search-box-toggle"></i>
+					<p>shoppingbag&nbsp;</p>
+					<p id="shoping-counter">0</p>
+				</div>
+			</div>
+			<div id="mobile-search-box" class="show-or-hide">
+				<input type="text" name="search-item" id="mobile-search-field" placeholder="Sök varumärke eller produkt" />
+				<p>SÖK</p>
+			</div>
+		</div>		
+
+		<nav id="main-menu">					
+			<ul id="top-menu">
+				<li class="mobile-view-only top-menu-item" id="avdelningar">
+					<a href="#" class="top-menu-link mobile-view-only-header">Avdelningar</a>
+				</li>
+				<li class="top-menu-item" id="new-in-store">
+					<a href="#" class="top-menu-link">Nyheter</a>
+					<ul class="top-menu-sublist" id="all-items-we-sell-new">
+						<li class="top-menu-subcategory" id="all-apparel">
+							<a href="#" class="category-link">Kläder</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="clothing-new">
+									<a href="#">Basics</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">T-Shirts</a></li>
+										<li class="innermost-li"><a href="#">Tröjor</a></li>
+										<li class="innermost-li"><a href="#">Byxor</a></li>
+										<li class="innermost-li"><a href="#">Underkläder</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="bathwear-new">
+									<a href="#">Bad och beach</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Badshorts</a></li>
+										<li class="innermost-li"><a href="#">Flip flops</a></li>
+										<li class="innermost-li"><a href="#">Beachbags</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="trousers-chinos-new">
+									<a href="#">Byxor och chinos</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Byxor</a></li>
+										<li class="innermost-li"><a href="#">Cargobyxor</a></li>
+										<li class="innermost-li"><a href="#">Chinos</a></li>
+										<li class="innermost-li"><a href="#">Joggingbyxor</a></li>
+										<li class="innermost-li"><a href="#">Kostymbyxor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="jackets-new">
+									<a href="#">Jackets</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Rockat och trenchcoats</a></li>
+										<li class="innermost-li"><a href="#">Anorak</a></li>
+										<li class="innermost-li"><a href="#">Jeansjackor</a></li>
+										<li class="innermost-li"><a href="#">Parkas</a></li>
+										<li class="innermost-li"><a href="#">Västar</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="jeans-new">
+									<a href="#">Jeans</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Skinny fit jeans</a></li>
+										<li class="innermost-li"><a href="#">Slim fit jeans</a></li>
+										<li class="innermost-li"><a href="#">Loose fit jeans</a></li>
+										<li class="innermost-li"><a href="#">Regular jeans</a></li>
+										<li class="innermost-li"><a href="#">Ripped jeans</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-shoes-new">
+							<a href="#" class="category-link">Skor</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="boots-new">
+									<a href="#">Boots och kängor</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots och kängor utan snöring</a></li>
+										<li class="innermost-li"><a href="#">Boots och kängor med snöring</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="dress-shoes-new">
+									<a href="#">Dressade skor</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Dressade skor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="flipflops-sandals-new">
+									<a href="#">Flip flop och sandlar</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Flip flop</a></li>
+										<li class="innermost-li"><a href="#">Sandlar</a></li>
+										<li class="innermost-li"><a href="#">Tofflor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="sneakers-textileshoes-new">
+									<a href="#">Sneaker och textilskor</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Låga sneakers</a></li>
+										<li class="innermost-li"><a href="#">Höga sneakers</a></li>
+										<li class="innermost-li"><a href="#">Espadrillos</a></li>
+										<li class="innermost-li"><a href="#">Skatskor</a></li>
+									</ul>
+								</li>				
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-watches-new">
+							<a href="#" class="category-link">Klockor</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="analog-watches-new">
+									<a href="#">Analoga clockor</a>
+									<!-- <ul class="product-listing">
+										<li class="innermost-li"><a href="#">Analoga clockor</a></li>
+									</ul> -->
+								</li>
+								<li class="innermost-category" id="digital-watches-new">
+									<a href="#">Digitala clockor</a>
+									<!-- <ul class="product-listing">
+										<li class="innermost-li"><a href="#">Dititala clockor</a></li>
+									</ul> -->
+								</li>
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-accessories-new">
+							<a href="#" class="category-link">Accessoarer</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="belts-new">
+									<a href="#">Bälten och hängslen</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Bälten</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="caps-hats-new">
+									<a href="#">Mössor- kepsar och hattar</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Hattar</a></li>
+										<li class="innermost-li"><a href="#">Kepsar</a></li>
+										<li class="innermost-li"><a href="#">Mössor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="ties-new">
+									<a href="#">Slips</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Slips</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="eyewear-new">
+									<a href="#">Solglasögon</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Metallbåge</a></li>
+										<li class="innermost-li"><a href="#">Plastbåge</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="jewelry-new">
+									<a href="#">Smycken</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Armband</a></li>
+										<li class="innermost-li"><a href="#">Halsband</a></li>
+										<li class="innermost-li"><a href="#">Ringar</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="bags-wallets-new">
+									<a href="#">Väskor och plånböcker</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Axelremsväskor</a></li>
+										<li class="innermost-li"><a href="#">Beachbags</a></li>
+										<li class="innermost-li"><a href="#">Datorväskor</a></li>
+										<li class="innermost-li"><a href="#">Necessärer</a></li>
+										<li class="innermost-li"><a href="#">Planböcker</a></li>
+										<li class="innermost-li"><a href="#">Ryggsäckar</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-grooming-products-new">
+							<a href="#" class="category-link">Grooming</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="face-care-new">
+									<a href="#">Ansiktevård</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Acne</a></li>
+										<li class="innermost-li"><a href="#">Ansiktskrämer och återfuktning</a></li>
+										<li class="innermost-li"><a href="#">Concealer</a></li>
+										<li class="innermost-li"><a href="#">Munhygien</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="smells-new">
+									<a href="#">Döfter</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Aftershave</a></li>
+										<li class="innermost-li"><a href="#">Perfym</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="hair-care">
+									<a href="#">Hårvård och styling</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Hårfärg</a></li>
+										<li class="innermost-li"><a href="#">Hårbortfall</a></li>
+										<li class="innermost-li"><a href="#">Shampoo och bortfall</a></li>
+										<li class="innermost-li"><a href="#">Styling</a></li>
+										<li class="innermost-li"><a href="#">Styling verktyg</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="body-care-new">
+									<a href="#">Kroppsvård</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Deodrand</a></li>
+										<li class="innermost-li"><a href="#">Hudlotion</a></li>
+										<li class="innermost-li"><a href="#">Hand och fotvård</a></li>
+										<li class="innermost-li"><a href="#">Tvål och bad</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="shaving-trimming-new">
+									<a href="#">Rakning och skäggvård</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Aftershave</a></li>
+										<li class="innermost-li"><a href="#">Rakgel och rakskum</a></li>
+										<li class="innermost-li"><a href="#">Rakhyvlar och rakknivar</a></li>
+										<li class="innermost-li"><a href="#">Raktillbehör</a></li>
+										<li class="innermost-li"><a href="#">Skägg och mustaschvax</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="top-menu-item" id="categories">
+					<a href="#" class="top-menu-link">Kategori</a>
+					<ul class="top-menu-sublist" id="all-items-we-sell">
+						<li class="top-menu-subcategory" id="all-apparel">
+							<a href="#" class="category-link">Kläder</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="clothing">
+									<a href="#">Basics</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">T-Shirts</a></li>
+										<li class="innermost-li"><a href="#">Tröjor</a></li>
+										<li class="innermost-li"><a href="#">Byxor</a></li>
+										<li class="innermost-li"><a href="#">Underkläder</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="bathwear">
+									<a href="#">Bad och beach</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Badshorts</a></li>
+										<li class="innermost-li"><a href="#">Flip flops</a></li>
+										<li class="innermost-li"><a href="#">Beachbags</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="trousers-chinos">
+									<a href="#">Byxor och chinos</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Byxor</a></li>
+										<li class="innermost-li"><a href="#">Cargobyxor</a></li>
+										<li class="innermost-li"><a href="#">Chinos</a></li>
+										<li class="innermost-li"><a href="#">Joggingbyxor</a></li>
+										<li class="innermost-li"><a href="#">Kostymbyxor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="jackets">
+									<a href="#">Jackets</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Rockat och trenchcoats</a></li>
+										<li class="innermost-li"><a href="#">Anorak</a></li>
+										<li class="innermost-li"><a href="#">Jeansjackor</a></li>
+										<li class="innermost-li"><a href="#">Parkas</a></li>
+										<li class="innermost-li"><a href="#">Västar</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="jeans">
+									<a href="#">Jeans</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Skinny fit jeans</a></li>
+										<li class="innermost-li"><a href="#">Slim fit jeans</a></li>
+										<li class="innermost-li"><a href="#">Loose fit jeans</a></li>
+										<li class="innermost-li"><a href="#">Regular jeans</a></li>
+										<li class="innermost-li"><a href="#">Ripped jeans</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-shoes">
+							<a href="#" class="category-link">Skor</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="boots">
+									<a href="#">Boots och kängor</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots och kängor utan snöring</a></li>
+										<li class="innermost-li"><a href="#">Boots och kängor med snöring</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="dress-shoes">
+									<a href="#">Dressade skor</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Dressade skor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="flipflops-sandals">
+									<a href="#">Flip flop och sandlar</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Flip flop</a></li>
+										<li class="innermost-li"><a href="#">Sandlar</a></li>
+										<li class="innermost-li"><a href="#">Tofflor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="sneakers-textileshoes">
+									<a href="#">Sneaker och textilskor</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Låga sneakers</a></li>
+										<li class="innermost-li"><a href="#">Höga sneakers</a></li>
+										<li class="innermost-li"><a href="#">Espadrillos</a></li>
+										<li class="innermost-li"><a href="#">Skatskor</a></li>
+									</ul>
+								</li>				
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-watches">
+							<a href="#">Klockor</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="analog-watches">
+									<a href="#">Analoga clockor</a>
+									<!-- <ul class="product-listing">
+										<li class="innermost-li"><a href="#">Analoga clockor</a></li>
+									</ul> -->
+								</li>
+								<li class="innermost-category" id="digital-watches">
+									<a href="#">Digitala clockor</a>
+									<!-- <ul class="product-listing">
+										<li class="innermost-li"><a href="#">Dititala clockor</a></li>
+									</ul> -->
+								</li>
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-accessories">
+							<a href="#" class="category-link">Accessoarer</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="belts">
+									<a href="#">Bälten och hängslen</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Bälten</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="caps-hats">
+									<a href="#">Mössor- kepsar och hattar</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Hattar</a></li>
+										<li class="innermost-li"><a href="#">Kepsar</a></li>
+										<li class="innermost-li"><a href="#">Mössor</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="ties">
+									<a href="#">Slips</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Slips</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="eyewear">
+									<a href="#">Solglasögon</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Metallbåge</a></li>
+										<li class="innermost-li"><a href="#">Plastbåge</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="jewelry">
+									<a href="#">Smycken</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Armband</a></li>
+										<li class="innermost-li"><a href="#">Halsband</a></li>
+										<li class="innermost-li"><a href="#">Ringar</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="bags-wallets">
+									<p>Väskor och plånböcker</p>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Axelremsväskor</a></li>
+										<li class="innermost-li"><a href="#">Beachbags</a></li>
+										<li class="innermost-li"><a href="#">Datorväskor</a></li>
+										<li class="innermost-li"><a href="#">Necessärer</a></li>
+										<li class="innermost-li"><a href="#">Planböcker</a></li>
+										<li class="innermost-li"><a href="#">Ryggsäckar</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="top-menu-subcategory" id="all-grooming-products">
+							<a href="#" class="category-link">Grooming</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="face-care">
+									<a href="#">Ansiktevård</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Acne</a></li>
+										<li class="innermost-li"><a href="#">Ansiktskrämer och återfuktning</a></li>
+										<li class="innermost-li"><a href="#">Concealer</a></li>
+										<li class="innermost-li"><a href="#">Munhygien</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="smells">
+									<a href="#">Döfter</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Aftershave</a></li>
+										<li class="innermost-li"><a href="#">Perfym</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="hair-care">
+									<a href="#">Hårvård och styling</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Hårfärg</a></li>
+										<li class="innermost-li"><a href="#">Hårbortfall</a></li>
+										<li class="innermost-li"><a href="#">Shampoo och bortfall</a></li>
+										<li class="innermost-li"><a href="#">Styling</a></li>
+										<li class="innermost-li"><a href="#">Styling verktyg</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="body-care">
+									<a href="#">Kroppsvård</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Deodrand</a></li>
+										<li class="innermost-li"><a href="#">Hudlotion</a></li>
+										<li class="innermost-li"><a href="#">Hand och fotvård</a></li>
+										<li class="innermost-li"><a href="#">Tvål och bad</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="shaving-trimming">
+									<a href="#">Rakning och skäggvård</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Aftershave</a></li>
+										<li class="innermost-li"><a href="#">Rakgel och rakskum</a></li>
+										<li class="innermost-li"><a href="#">Rakhyvlar och rakknivar</a></li>
+										<li class="innermost-li"><a href="#">Raktillbehör</a></li>
+										<li class="innermost-li"><a href="#">Skägg och mustaschvax</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>   
+				</li>
+				<li class="top-menu-item" id="brands">
+					<a href="#" class="top-menu-link">Varumärken</a>
+					<ul class="top-menu-sublist">
+						<li class="top-menu-subcategory popular-brands" id="all-brands">
+							<a href="#" class="category-link">Populära Märken</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="brand-gant">
+									<a href="#">GANT</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-lyle-and-scott">
+									<a href="#">Lyle and Scott</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-calvin-klein-jeans">
+									<a href="#">Calvin Klein Jeans</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-Levis">
+									<a href="#">Levis</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-les-deux">
+									<a href="#">Les Deux</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-gabba">
+									<a href="#">Gabba</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+							</ul>  
+						</li>
+						<li class="top-menu-subcategory popular-brands" id="brands-new-arrivals">
+							<a href="#" class="category-link">Nyher från</a>
+							<ul class="which-type-of-product">
+								<li class="innermost-category" id="brand-cdlp">
+									<a href="#">CDLP</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-morris">
+									<a href="#">Morris</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-penfield">
+									<a href="#">Penfield</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+								<li class="innermost-category" id="brand-tommy-hillfiger">
+									<a href="#">Tommy Hillfiger</a>
+									<ul class="product-listing">
+										<li class="innermost-li"><a href="#">Boots and Kängor</a></li>
+										<li class="innermost-li"><a href="#">Klockor</a></li>
+										<li class="innermost-li"><a href="#">Sneakers och textilskor</a></li>
+										<li class="innermost-li"><a href="#">Strumpor och underkläder</a></li>
+										<li class="innermost-li"><a href="#">T-shirts</a></li>
+									</ul>
+								</li>
+							</ul>   
+						</li>
+						<li class="top-menu-subcategory popular-brands" id="brand-from-a-to-z">
+							<a href="#" class="category-link">Alla varumärken</a>
+							<p><a href="#" id="list-all-brands">A - Ö</a></p>
+						</li>
+					</ul>   
+				</li>
+
+				<li class="top-menu-item" id="sale">
+					<a href="#" class="top-menu-link">Sale</a>			  
+				</li>
+
+				<li class="top-menu-item" id="inspiration">
+					<a href="#" class="top-menu-link">Inspiration</a>
+				</li>
+
+				<li class="top-menu-item" id="top-selling">
+					<a href="#" class="top-menu-link">Toplista</a>
+				</li>
+
+				<li class="top-menu-item" id="deals">
+					<a href="#" class="top-menu-link">Deals</a>
+				</li>
+				<li class="mobile-view-only top-menu-item">
+					<a href="#" class="top-menu-link">Presentkort</a>
+				</li>
+
+				<li class="top-menu-item mobile-view-only" id="fit-by-fit">
+					<a href="#" class="top-menu-link">Fit by fit</a>
+				</li>
+				
+				<li class="top-menu-item mobile-view-only" id="kund-service">
+					<a href="#" class="top-menu-link mobile-view-only-header">Kundservice</a>
+					<a href="#" class="top-menu-link">Information</a>
+					<a href="#" class="top-menu-link">Maila oss</a>
+					<a href="#" class="top-menu-link">Ring oss</a>
+				</li>
+
+				<li class="top-menu-item mobile-view-only" id="social-media">
+					<a href="#" class="top-menu-link mobile-view-only-header">Sociala medier</a>
+					<a href="#" class="top-menu-link">Facebook</a>
+					<a href="#" class="top-menu-link">Instagram</a>
+					<a href="#" class="top-menu-link">Youtube</a>
+				</li>
+			</ul>
+
+			<div class="search-bar-contianer">
+				<input type="text" name="search-item" class="mobile-search-field" placeholder="Sök" />
+				<div class="search-glass">
+					<img src="images/products/search.svg">
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="clear-fix"></div>
+
+	<div id="body-overlay"></div>
+
+
+	<main id="cout-main-container">
+		<h1 id="check-out-heading">kassa</h1>
+		<hr class="short-heading-underline" />
+
+		<section class="shoping-bag">
+			<h2 class="sub-catagory-heading">shoppingbag</h2>
+			<hr class="full-length-thick-ruler">
+			<section class="product-to-be-checked-out">
+				<div class="product-to-be-checked-out-image"></div>
+				<section class="product-to-be-checked-out-details">
+					<section class="brand-model flexed-block">
+						<div class="sc-brand-name">
+							<p class="product-brand">Massimo Dutti</p>
+							<p class="product-name">Blue Jacket</p>
+						</div>
+						<div class="delete-product-button-container">
+							<img src="images/Shoping-cart/garbage.svg" class="delete-product-button">
+						</div>
+					</section>
+					<section class="sc-price-and-other-details">
+						<div class="size-container">	
+							<p class="size-text">Storlek</p>
+							<div class="size-and-availability flexed-block">
+								<article class="customized-select-container">
+									<div class="down-arrow-select-button">
+										<img src="images/landing-page-images/down-arrow.svg" />	
+									</div>			
+									<select class="customized-select sc-product-size">
+										<option>Small</option>
+										<option>Medium</option>
+										<option>Large</option>
+										<option>Extra-large</option>
+									</select>
+								</article>
+								<p class="availability-status">I lager</p>
+							</div>						
+						</div>
+						<div class="quantity-container">
+							<p class="quantity-text">Antal</p>
+							<div class="number-and-price flexed-block">
+								<article class="customized-select-container">
+									<div class="down-arrow-select-button">
+										<img src="images/landing-page-images/down-arrow.svg" />	
+									</div>
+									<select class="sc-product-quantity customized-select">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+									</select>
+								</article>
+								<p class="product-price"><span class="price-number">149</span> <span class="price-text">kr</span></p>
+							</div>
+						</div>
+					</section>
+				</section>
+			</section>
+			<table class="total-cost">
+				<tr class="all-selected-products-cost">
+					<th>varor:</th>
+					<td class="" id="all-selected-products-cost"><span class="price-number">149</span> <span class="price-text">kr</span></td>
+				</tr>
+				<tr class="sc-total-cost">
+					<th>summa:</th>
+					<td><span class="price-number">149</span> <span class="price-text">kr</span></td>
+				</tr>
+			</table>
+		</section>	
+
+		<section class="discount">
+			<section class="click-triggered-accordion">
+				<input type="checkbox" name="" class="checkbox-for-accordion" id="gift-code-checkbox">
+				<label for="gift-code-checkbox">
+					<div class="slide-toggle">
+						<div class="pusher"></div>
+						<div class="slider-button"></div>
+					</div>
+				</label>
+
+				<label for="gift-code-checkbox"><p class="section-heading">Lägg till rabattkod/presentkort</p></label>
+
+				<div class="content-gatherer-rollable">
+					<section class="mini-form-wrapper">
+						<p class="field-heading">Presentkort</p>
+						<form class="info-collector-mini-form">
+							<input type="text" name="gift-code" placeholder="Ange presentkortets kod" class="yellow-on-focus">
+							<button type="button" class="desktop-only-button add-gift-code gray-button">lägg till</button>
+							<button type="button" class="small-screen-only-button add-gift-code gray-button"> <img src="images/landing-page-images/add.svg"> </button>
+						</form>
+					</section>
+					<section class="mini-form-wrapper">
+						<p class="field-heading">rabbatkod/värdecheck</p>
+						<form class="info-collector-mini-form">
+							<input type="text" name="discount-code" class="yellow-on-focus">
+							<button type="button" class="desktop-only-button add-discount-code gray-button">lägg till</button>
+							<button type="button" class="small-screen-only-button add-discount-code gray-button"><img src="images/landing-page-images/add.svg"></button>
+						</form>
+						<a class="form-field-explanation-text" href="#">Fungerar inte din rabattkod? Kolla så att du uppfyller erbjudandevillkoren. Allmänna villkor hittar du här: stayhard.se/information/villkor</a>
+					</section>	
+				</div>	
+			</section>
+
+			<section class="click-triggered-accordion">
+				<input type="checkbox" name="" class="checkbox-for-accordion" id="massage-box-checkbox">
+				<label for="massage-box-checkbox">
+					<div class="slide-toggle">
+						<div class="pusher"></div>
+						<div class="slider-button">	</div>					
+					</div>
+				</label>
+
+				<label for="massage-box-checkbox"><p class="section-heading">Lämna ett meddelande</p></label>
+
+				<div class="content-gatherer-rollable">
+					<section class="mini-form-wrapper">
+						<form class="info-collector-mini-form">
+							<textarea rows="5" class="yellow-on-focus"></textarea>							
+						</form>
+						<p class="form-field-explanation-text">Genom att lämna ett meddelande kommer din order att behandlas manuellt och leverans kan därför komma att ta längre tid</p>						
+					</section>					
+				</div>
+			</section>
+		</section>
+
+		<section class="email-and-postal-code">
+			<form class="customer-email-and-postal-code">
+				<div class="user-data">
+					<p class="field-heading">e-post</p>
+					<input type="email" name="user-e-mail" class="yellow-on-focus" id="user-e-mail">
+					<p id="invalid-e-mail-warning" class="invalid-input">Ogiltig e-post!</p>
+				</div>
+				<div class="user-data">
+					<p class="field-heading">postkod</p>
+					<input type="text" name="user-postal-code" class="yellow-on-focus" id="user-postal-code">
+					<p id="invalid-postal-code-warning" class="invalid-input">Ogiltig postkod!</p>
+				</div>
+			</form>		
+			<button type="button" class="gray-button">tillbaka</button>	
+		</section>
+
+		<section class="user-policy">
+			<h2 class="sub-catagory-heading">godkänner du oss?</h2>
+			<hr class="full-length-thick-ruler">
+			<p>Genom att klicka ja nedan godkänner därmed att ta emot anpassade erbjudanden via e-post, sms eller post baserat på tidigare köp, tidigare besök samt aktivitet på Stayhards sidor.</p>
+
+			<a href="#" id="user-policy-link">Så behandlar vi dina personuppgifter</a>
+
+			<section>
+				<div class="radio-option">					
+					<label for="privacy-policy-accepted" class="checkbox-label">
+						<div class="customized-radio">
+							<input type="radio" name="privacy-policy-check" value="yes" id="privacy-policy-accepted" class="yellow-radio-target-checkbox">
+							<div class="customized-radio-dot"></div>
+						</div>
+					</label>
+					<label for="privacy-policy-accepted">
+						<p class="darkned-label">ja tack</p>
+					</label>
+				</div>
+
+				<hr class="fine-section-divider">
+
+				<div class="radio-option">
+					
+					<label for="privacy-policy-rejected" class="checkbox-label">
+						<div class="customized-radio">
+							<input type="radio" name="privacy-policy-check" value="no" id="privacy-policy-rejected" class="yellow-radio-target-checkbox">
+							<div class="customized-radio-dot"></div>
+						</div>
+					</label>
+					<label for="privacy-policy-rejected">
+						<p class="darkned-label">nej tack</p>
+					</label>
+				</div>
+			</section>
+		</section>
+
+		<section class="delivery-solutions">
+			<h2 class="sub-catagory-heading">fraktsätt</h2>
+			<hr class="full-length-thick-ruler">
+
+			<section class="delivery-solutions-wrapper radio-option">
+				<label for="postnord-radio">
+					<div class="customized-radio">
+						<input type="radio" name="selected-delivery-partner" value="postnord" id="postnord-radio" class="yellow-radio-target-checkbox">
+						<div class="customized-radio-dot"></div>
+					</div>
+				</label>
+				<div class="delivery-partner-container">
+					<label for="postnord-radio">
+						<div class="available-delivery-solution">
+							<div class="delivery-conditions-and-cost">
+								<p class="darkned-label">postnord till paketombud</p>
+								<ul class="delivery-conditions-quick-list">
+									<li>Fri frakt över 499kr!</li>
+									<li>1-3 arbetsdagar till ditt utlämningsställe</li>
+									<li>Orden skickas samma dag (vid beställning innan 14:00 på vardagar)</li>
+								</ul>
+							</div>
+							<img src="images/check-out/postnord2.gif" alt="delivery-partner-logo">
+						</div>
+					</label>
+					<p class="delivery-cost">Avgift  <span id="delivery-cost-number">0</span> kr</p>
+				</div>
+			</section>
+		</section>
+
+		<section class="delivery-address">
+			<h2 class="sub-catagory-heading">betala</h2>
+			<hr class="full-length-thick-ruler">
+
+			<table id="delivery-address">
+				<caption>Dina uppgifter</caption>
+				<tr>
+					<td>
+						<input type="email" name="user-e-mail">
+						<p>Mejladress</p>					
+					</td>
+					<td>
+						<input type="text" name="user-postal-code">
+						<p>Postnummer</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" name="national-identity-number">
+						<p>Personnummer (ÅÅMMDD-XXXX)</p>
+						<span class="optional-details">Skippa</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="customer-name">
+						<p>Förnamn</p>
+					</td>
+					<td>
+						<input type="text" name="customer-surname">
+						<p>Efternamn</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" name="customer-care-of-address">
+						<p>C/O (frivilligt)</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="customer-address">
+						<p>Adress</p>
+						<span class="optional-details">Lägg till C/O</span>
+					</td>
+					<td>
+						<input type="text" name="customer-locality">
+						<p>Ort</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" name="customer-telephone-number">
+						<p>Telefonnummer</p>
+						<span class="optional-details">							
+							<img src="images/check-out/question-in-circular-button.svg">
+							<p class="on-hover-help-text">Ange ditt telefon nummer för att kunna bli kokntaktad om din beställning.</p>
+						</span>
+					</td>
+				</tr>
+			</table>
+			
+			<section class="klarna-data-and-payment-conditions">
+				<a href="#">Autoifyllnadinställningar</a>
+				<p>	&bull;</p>
+				<a href="#">Dataskyddinfo</a>
+				<p class="partners-name">Klanra</p>				
+			</section>
+		</section>
+
+		<button type="button" class="customized-green-button" id="continue-shoping-button">fortsätt</button>
+
+		<input type="checkbox" name="" id="billing-details-checkbox">
+
+		<div class="billing-details">
+			<div class="individual-product-cost">
+				<p class="invoice-item">9 x 200SF Boxer Brief 2-pack 884 Jet Black</p>
+				<p>
+					<span class="price-number">1791,00</span> <span class="currency-suffix">SEK</span>
+				</p>
+			</div>
+			<div class="individual-product-cost">
+				<p class="invoice-item">Weekpack 7pack Black</p>
+				<p>
+					<span class="price-number">199,00</span> <span class="currency-suffix">SEK</span>
+				</p>
+			</div>
+			<div class="individual-product-cost">
+				<p class="invoice-item">Frakt:Postnord Till Paketombud</p>
+				<p>
+					<span class="price-number">0,00</span> <span class="currency-suffix">SEK</span>
+				</p>
+			</div>
+
+			<hr class="fine-section-divider">
+
+			<div class="individual-product-cost">
+				<p class="invoice-item">Totalbelopp inkl. moms</p>
+				<p>
+					<span class="price-number">1990,00</span> <span class="currency-suffix">SEK</span>
+				</p>
+			</div>
+			<div class="individual-product-cost">
+				<p class="invoice-item">Moms</p>
+				<p>
+					<span class="price-number">398,00</span> <span class="currency-suffix">SEK</span>
+				</p>
+			</div>
+		</div>
+
+		<section class="payment-details-and-options">
+			<p class="billing-details-text">Totalbelopp inkl. moms &nbsp; 
+				<label for="billing-details-checkbox">
+					<span class="billing-details-link">Visa detaljer</span>
+				</label>
+			</p>
+			<p id="total-cost-in-currency"><span class="total-cost-in-numbers">1990</span> <span class="currency-suffix">SEK</span></p>
+
+			<button type="button" class="customized-green-button">slutför köp</button>
+
+			<h2 class="sub-catagory-heading">tillgängliga beställningsätt</h2>
+
+			<p>Få först, Betala sen, Dela upp, Betala direkt, Banköverföring och Kort</p>
+
+			<section class="partners-logos">
+				<img class="partner" src="images/check-out/klarna-victory.png">
+				<img class="partner" src="images/check-out/klarna-victory-2.png">
+				<img class="partner" src="images/check-out/bank-id2.png">
+				<img class="partner" src="images/check-out/visa2.png">
+				<img class="partner" src="images/check-out/mastercard2.png">
+				<img class="partner" src="images/check-out/american-express2.png">
+			</section>
+
+			<p class="use-policy-text">Genom att klicka på "Slutför Köp" godkänner jag <a href="#">Klarna användvilkor</a> och bekräfter att jag har läst <a href="#">KlarnasDataskyddpolicy</a>. Jag godkänner <a href="#">villkoren</a> för Stayhard AB.</p>
+
+			<section class="klarna-logo-container">
+				<div class="overlay"></div>
+				<img src="images/check-out/klarna.png" alt="Klarna logo">
+			</section>
+		</section>
+
+		
+	</main>
+
+
+
+	<a href="#clear-fix"> <div id="is-scrolling-up"><img src="images/landing-page-images/up-arrow-black.svg"></div></a>
+
+	<footer>
+		<div id="footer-container">
+			<!--Social Media Bar-->
+			<div id="social-media-bar">
+				<a href="https://www.instagram.com/Stayhard_Official/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/Stayhard.se" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.youtube.com/channel/UCHJbVA7qmldYvRcTUxXGnnA" target="_blank"><i class="fab fa-youtube"></i></a>
+			</div>
+			<div id="follow-us">
+				<p class="heading">följ oss och få 15% rabbatt</p>
+				<div class="horizontal-line"></div>
+				<p id="instagram-discount" class="category-description">Följ oss på Instagram, få 15% rabatt på hela din beställning!</p>
+				<p id="clickable-follow-us-text">
+					<span id="instagram-conformation"><i class="fas fa-check-circle"></i></span>
+					<a href="https://www.instagram.com/Stayhard_Official/" target="_blank">följ oss på instagram</a>
+				</p>
+				<div id="discount-code">
+					<p id="how-much-discount">15% RABBATT</p>
+					<p class="small-text">Din rabbattkod visas här</p>
+				</div>
+				<div id="discount-info">
+					<p class="small-text">Rabattkoden gäller en gång per kund och enbart ord. pris (ej presentkort). För fullständiga villkor se:</p>
+					<a href="https://stayhard.se/information/villkor" class="small-text" target="_blank">https://stayhard.se/information/villkor</a>
+				</div>
+			</div>
+
+			<!--Delivery and Return policy-->
+			<div id="delivery-guaranty">
+				<div id="delivery-cost">
+					<h4>fri frakt & fri retur</h4>
+					<div class="horizontal-line"></div>
+					<p class="category-description">Oavsett storlek på din order</p>
+				</div>
+				<div id="delivery-time">
+					<h4>snabba leveranser</h4>
+					<div class="horizontal-line"></div>
+					<p class="category-description">Beställ innan kl 14 så skickar
+					vi din beställning samma dag</p>
+				</div>
+				<div id="return-period">
+					<h4>30 DAGARS RETURRÄTT</h4>
+					<div class="horizontal-line"></div>
+					<p class="category-description">Alltid 30 dagars returrätt</p>
+				</div>
+			</div>
+
+			<!-- Information and partners-->
+			<div id="info-partners">
+				<div id="information-lists">
+					<p class="section-heading">Information</p>
+					<div id="container" class="small-text">
+						<ul>
+							<li><a href="kontaktaoss.html">Kontakta oss</a></li>
+							<li><a href="#">Vanliga frågor & svar</a></li>
+							<li><a href="#">Så handlar du</a></li>
+							<li><a href="#">Betalning</a></li>
+							<li><a href="#">Byte Retur & Ångerrätt</a></li>
+							<li><a href="#">Återbetalning</a></li>
+							<li><a href="#">Frakt & Leverans</a></li>
+							<li><a href="#">Storleksguide</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Nyhetsbrev</a></li>
+							<li><a href="#">Lediga tjänster</a></li>
+							<li><a href="about.html">Om Stayhard</a></li>
+							<li><a href="#">Utmärkeiser & Press</a></li>
+							<li><a href="#">Trygg e-handel</a></li>
+							<li><a href="#">Bli affiliate</a></li>
+							<li><a href="#">Hållbarhet</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Köpvillkor</a></li>
+							<li><a href="#">Erbjudandevillkor</a></li>
+							<li><a href="#">Cookie Policy</a></li>
+							<li><a href="#">GDPR</a></li>
+							<li><a href="#">#YesStayhard</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="partners">
+					<p class="section-heading">partners</p>
+					<div id="container">
+						<img src="images/footer-icons/tryggehandel.png" alt="Trygg Handel">
+						<img src="images/footer-icons/postnord.png" alt="Postnord">
+						<img src="images/footer-icons/mastercard-visa.png" alt="Mastercard Visa">
+						<img src="images/footer-icons/klarna.png" alt="Klarna">
+						<img src="images/footer-icons/verified-by-visa.png" alt="Veryfied by Visa">
+						<img src="images/footer-icons/mastercard-securecode.png" alt="Mastercard Secure Code">
+						<div id="prisjakt-score">
+							<p>
+								<img src="images/footer-icons/prisjakt.ico" alt="Prisjakt icon"> Kundomdöme på Prisjakt</p>
+							<p>
+								<span id="prisjakt-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</span> 
+								8.83/10
+							</p>
+							<p><a href="https://www.prisjakt.nu/butiksinfo.php?f=6391" target="_blank">Läs våra omdömen</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="small-text" id="bottom-text">
+				Vi på Stayhard brinner för stil. Vårt viktigaste uppdrag är att se till att du ska hitta kläder som du gillar och som matchar din livsstil. Gå loss bland 250 varumärken och hitta dina favoriter. Vi har ett brett utbud som består av kläder, accessoarer, skor, grooming-produkter och träningskläder från både välkända varumärken och dessutom en rad av nya schyssta märken. Kundnöjdhet är otroligt viktig för oss. För att alla våra kunder ska känna sig trygga är vi så klart medlemmar i Svensk Distanshandel och Trygg E-handel. Vår Kundservice hjälper dig via telefon, mail eller chatt med både frågor och tips.s
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/ex-landing-page-scripts.js"></script>
+	<script type="text/javascript" src="scripts/new-check-out.js"></script>
+
+</body>
+</html>

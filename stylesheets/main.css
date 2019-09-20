@@ -1,0 +1,378 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {
+    --light-gray: #EBEBEB;
+    --medium-gray: #C7C8CA;  
+    --dark-gray: #808285;
+    --light-green: #6eb76e;
+    --light-blue: #1E90FF;
+    --space-between-scrollables: 10px;
+}
+
+/*First Section */
+main {
+	margin: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	max-width: 1300px;
+}
+
+/*Layout for both main sections(First and third on the page)*/ 
+main .main-products {
+	display: grid; 
+	grid-template: repeat(auto, 1fr);
+	grid-auto-flow: row;
+	grid-gap: 8px 20px; 
+}
+.main-products .main-articles {
+	background-repeat: no-repeat; 
+	height: 130vw;
+	max-width: 100%; 
+}
+
+.main-products .main-articles:hover {
+	cursor: pointer;
+}
+
+/*Defining background images for first main(first on the page) section*/
+#current-offers .main-articles:nth-child(1) {
+	background: url('../images/landing-page-images/70_big_high_opti.gif');
+	background-position: 50% 50%;
+	background-size: contain;
+}
+#current-offers .main-articles:nth-child(2) {
+	background: url('../images/landing-page-images/v1_must_haves_high.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+}	
+#current-offers .main-articles:nth-child(3) {
+	background: url('../images/landing-page-images/holiday-gift-guides.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+/*Setting background-images for second main(third on the page) section*/
+
+#second-last-section .main-articles:nth-child(1){
+	background-image: url('../images/second-last-section/v48_hoodies_high.jpg'); 
+	background-position: center center;
+	background-size: cover;
+}
+#second-last-section .main-articles:nth-child(2){
+	background-image: url('../images/second-last-section/v49_logo_high.jpg'); 
+	background-position: 50% 50%;
+	background-size: cover; 
+}
+#second-last-section .main-articles:nth-child(3){
+	background-image: url('../images/second-last-section/v48_shirts_high.jpg'); 
+	background-position: center center;
+	background-size: cover;
+}
+
+/*Layouting scrollable sections' container*/
+.scrollable-section-container {
+	padding-top: 20px;
+	display: flex; 
+	flex-direction: column;
+	overflow: hidden;
+}
+.scrollable-section-container > * {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.scrollable-section-container > div {
+	margin-top: 15px;
+}
+.scrollable-section-container a {
+	color: var(--dark-gray);
+}
+.scrollable-section-container a:hover {
+	color: #000;
+}
+
+
+/* Layout for horizontally scrolable sections*/
+.scrollable-section-container .gallery-container {
+	position: relative;
+}
+.scrollable-section-container .product-gallery {
+	display: flex; 
+	flex-wrap: nowrap;
+	overflow-x: scroll; 
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+	margin-bottom: -1.4rem;
+	padding-bottom: 1.4rem;
+}
+.scrollable-section-container .product-gallery::-webkit-scrollbar {
+	display: none;
+}
+.product-gallery .product-info {
+	font-size: 11px;
+	flex: 0 0 auto; 
+	display: flex; 
+	flex-direction: column;
+	text-align: left;
+	width: calc(50% - (var(--space-between-scrollables)*2));
+	padding-right: var(--space-between-scrollables);
+}
+.product-gallery .product-info:hover {
+	cursor: pointer;
+}
+
+.product-info .product-image {
+	position: relative;
+	width: 100%;
+	height: 50vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 5px; 
+}
+
+.product-info p{
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 2px 0;
+}
+.product-info p.brand-name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.product-info p.product-price {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/*Toggling the sizes on hover*/
+.product-image .sizes {
+	padding: 5px;
+	text-transform: uppercase;
+	visibility: hidden;
+}
+.product-image:hover > div.sizes {
+	visibility: visible;
+}
+
+/*Layout for the scroll-buttons on scrollable sections*/
+.scrollable-section-container .left-arrow,
+.scrollable-section-container .right-arrow {
+	font-size: 50px;
+	color: var(--dark-gray);
+	font-weight: bold;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	user-select: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	z-index: 9998;
+}
+.scrollable-section-container .left-arrow:hover,
+.scrollable-section-container .right-arrow:hover {
+	cursor: pointer;
+	color: rgba(255, 0, 0, 0.5);
+}
+.scrollable-section-container .left-arrow {
+	left: 0px;
+	display: none;
+}
+.scrollable-section-container .right-arrow {
+	right: 0px;
+}
+/*Setting backgrounds for second(first scrollable) section*/
+#second-section .product-info:nth-child(1) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/william baxter hooddie.jpeg'), url('../images/horizontal-seasonal-offers/william baxter hooddie-back.jpeg');
+}
+#second-section .product-info:nth-child(1) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/william baxter hooddie-back.jpeg');  /*changes background on hover*/
+}
+#second-section .product-info:nth-child(2) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/william-baxter-ted-slim.jpeg'), url('../images/horizontal-seasonal-offers/william-baxter-ted-slim-sideview.jpeg');
+}
+#second-section .product-info:nth-child(2) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/william-baxter-ted-slim-sideview.jpeg');
+}
+#second-section .product-info:nth-child(3) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/10653982_image.jpeg'), url('../images/horizontal-seasonal-offers/speachless-from far.jpeg');
+}
+#second-section .product-info:nth-child(3) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/speachless-from far.jpeg');
+}
+#second-section .product-info:nth-child(4) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/13235602_image.jpeg'), url('../images/horizontal-seasonal-offers/02366387_1.jpeg');
+}
+#second-section .product-info:nth-child(4) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/02366387_1.jpeg');
+}
+
+#second-section .product-info:nth-child(5) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/04236041_image.jpeg'), url('../images/horizontal-seasonal-offers/10646492_image.jpeg');
+}
+#second-section .product-info:nth-child(5) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/10646492_image.jpeg');
+}
+#second-section .product-info:nth-child(6) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/00969246_1-back.jpeg'), url('../images/horizontal-seasonal-offers/01373182_1.jpeg');
+}
+#second-section .product-info:nth-child(6) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/01373182_1.jpeg');
+}
+#second-section .product-info:nth-child(7) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/lesdeux.jpeg'), url('../images/horizontal-seasonal-offers/02366279_2.jpeg');
+}
+#second-section .product-info:nth-child(7) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/02366279_2.jpeg');
+}
+#second-section .product-info:nth-child(8) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/gant.jpeg'), url('../images/horizontal-seasonal-offers/02366551_1.jpeg');
+}
+#second-section .product-info:nth-child(8) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/02366551_1.jpeg');
+}
+#second-section .product-info:nth-child(9) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/levis.jpeg'), url('../images/horizontal-seasonal-offers/00968978_1.jpeg');
+}
+#second-section .product-info:nth-child(9) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/00968978_1.jpeg');
+}
+#second-section .product-info:nth-child(10) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/studiototalhooddie.jpeg'), url('../images/horizontal-seasonal-offers/11272002_image.jpeg');
+}
+#second-section .product-info:nth-child(10) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/11272002_image.jpeg');
+}
+#second-section .product-info:nth-child(11) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/levis crew neck.jpeg'), url('../images/horizontal-seasonal-offers/10664022_image.jpeg');
+}
+#second-section .product-info:nth-child(11) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/10664022_image.jpeg');
+}
+#second-section .product-info:nth-child(12) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/les deux hooddie.jpeg'), url('../images/horizontal-seasonal-offers/les deux hooddie-farther.jpeg');
+}
+#second-section .product-info:nth-child(12) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/les deux hooddie-farther.jpeg');
+}
+#second-section .product-info:nth-child(13) .product-image {
+	background-image: url('../images/horizontal-seasonal-offers/gant blue.jpeg'), url('../images/horizontal-seasonal-offers/gant blue - with jacket on.jpeg');
+}
+#second-section .product-info:nth-child(13) .product-image:hover {
+	background-image: url('../images/horizontal-seasonal-offers/gant blue - with jacket on.jpeg');
+}
+
+/*Setting backgrounds for last(second-scrollabe) section*/
+#last-section .product-info:nth-child(1) .product-image {
+	background-image: url('../images/last-section/black-trousers.jpeg'), url('../images/last-section/black-trousers-back.jpg');
+	background-size: cover;
+}
+#last-section .product-info:nth-child(1) .product-image:hover {
+	background-image: url('../images/last-section/black-trousers-back.jpg');
+}
+#last-section .product-info:nth-child(2) .product-image {
+	background-image: url('../images/last-section/hoodie.jpeg'), url('../images/last-section/tommy hoodie from far.jpeg');
+	background-size: cover;
+}
+#last-section .product-info:nth-child(2) .product-image:hover {
+	background-image: url('../images/last-section/tommy hoodie from far.jpeg');
+}
+#last-section .product-info:nth-child(3) .product-image {
+	background-image: url('../images/last-section/socks.jpeg'), url('../images/last-section/socks.jpeg');
+	 background-size: cover;
+}
+#last-section .product-info:nth-child(3) .product-image:hover {
+	background-image: url('../images/last-section/socks.jpeg');
+}
+#last-section .product-info:nth-child(4) .product-image {
+	background-image: url('../images/last-section/shirt.jpeg'), url('../images/last-section/ST shirt out.jpeg');
+	background-size: cover;
+}
+#last-section .product-info:nth-child(4) .product-image:hover {
+	background-image: url('../images/last-section/ST shirt out.jpeg');
+}
+#last-section .product-info:nth-child(5) .product-image {
+	background-image: url('../images/last-section/overcoat.jpeg'), url('../images/last-section/overcoat 2.jpeg');
+	background-size: cover;
+}
+#last-section .product-info:nth-child(5) .product-image:hover {
+	background-image: url('../images/last-section/overcoat 2.jpeg');
+}
+#last-section .product-info:nth-child(6) .product-image {
+	background-image: url('../images/last-section/blue-trousers.jpeg'),  url('../images/last-section/blue-trousers rear.jpeg'); 
+	background-size: cover;
+}
+#last-section .product-info:nth-child(6) .product-image:hover {
+	background-image: url('../images/last-section/blue-trousers rear.jpeg'); 
+}
+#last-section .product-info:nth-child(7) .product-image {
+	background-image: url('../images/last-section/sweatpants.jpeg'), url('../images/last-section/sweatpants combined.jpeg'); 
+	background-size: cover;
+}
+#last-section .product-info:nth-child(7) .product-image:hover {
+	background-image: url('../images/last-section/sweatpants combined.jpeg'); 
+}
+#last-section .product-info:nth-child(8) .product-image {
+	background-image: url('../images/last-section/underwearpack.jpg'), url('../images/last-section/AD underwearpack.jpg');
+	background-size: cover; 
+}
+#last-section .product-info:nth-child(8) .product-image:hover {
+	background-image: url('../images/last-section/AD underwearpack.jpg');
+}
+#last-section .product-info:nth-child(9) .product-image {
+	background-image: url('../images/last-section/greenshirt.jpeg'), url('../images/last-section/greenshirt rear.jpeg'); 
+	background-size: cover;
+}
+#last-section .product-info:nth-child(9) .product-image:hover {
+	background-image: url('../images/last-section/greenshirt rear.jpeg'); 
+}
+#last-section .product-info:nth-child(10) .product-image {
+	background-image: url('../images/last-section/highneck.jpg'), url('../images/last-section/highneck far.jpeg'); 
+	background-size: cover;
+}
+#last-section .product-info:nth-child(10) .product-image:hover {
+	background-image: url('../images/last-section/highneck far.jpeg');
+}
+
+
+@media (min-width: 770px) {
+	main .main-products {
+		grid-auto-flow: column;
+		align-content: center;
+	}
+	.main-products .main-articles {
+		height: 50vw;
+	}
+
+	.product-gallery .product-info {		
+		width: calc(33.33% - (var(--space-between-scrollables)*3));
+	}
+	.product-gallery .product-image {
+		height: 40vw;
+		background-size: contain;
+	}
+}
+
+@media (min-width: 970px) {
+	.main-products .main-articles {
+		max-height: 45em;
+	}
+		
+	.product-gallery .product-info {		
+		width: calc(16% - (var(--space-between-scrollables)*1));
+	}
+	.product-gallery .product-image {
+		height: 18vw;
+		max-height: 260px;
+	}
+}
+
+@media (min-width: 1050px) {
+		
+}
+
+@media (min-width: 1300px) {
+		
+}

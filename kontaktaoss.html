@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>	
+	<title>Kontakta oss - Stayhard</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimal-ui, user-scalable=no"" />
+
+	<!--<link rel="stylesheet" type="text/css" href="style sheets/kontakt.css">-->
+
+	<style>
+
+		body, html{
+			padding: 0;
+			margin: 60px;
+			text-decoration: none;
+			position: relative;
+		}
+
+		html {
+			background: #ffffff;
+			font-family: montserratlight,sans-serif;
+    		font-weight: 400;
+    		text-transform: none;
+    		letter-spacing: .01em;
+    		line-height: 1.3em;
+    		font-size: 13px;
+    		-webkit-font-smoothing: antialiased;
+		}
+
+			
+		#main-header{
+			background-color: #ce1e1a;
+			color: white;
+			text-align: center;
+			font-family: montserratsemi_bold,sans-serif;
+		    font-size: 1.0em;
+		    font-weight: 400;
+		    letter-spacing: .07em;
+		    padding: 10px;
+		    margin: 0;
+		    text-decoration: none;
+		}
+
+		.clearfix:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+
+		
+		.cmsRibbon-button {
+    		border: 1px #000000 solid;
+   			padding: 0 6px;
+    		background: #000000;
+    		margin: 3px 0;
+    		color: white!important;
+    		font-weight: bold;
+		}
+
+		.container{
+ 			width: 1200px;
+  			margin:0 auto;
+  		}
+
+
+		.container nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		} 
+
+
+		.container nav ul li{
+			padding: 0;
+			margin: left: 0;
+			display: flex;
+			justify-content: flex-start;
+		} 
+
+
+		.container nav ul li a{
+			padding: 0;
+			text-decoration: none;
+		}
+
+		.container nav ul li a:hover{
+			background: yellow;
+		}
+		
+
+  		#footer-links {
+			margin-top: 40px;
+			background: #fff;
+			border-top: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+			padding: 20px 0;
+		}
+
+		#footer-links .column {
+			width: 28%;
+			float: left;
+		}
+
+		.column2 {
+			width: 45%;
+			float: left;
+		}
+
+		.column3 {
+			width: 20%;
+			float: left;
+		}
+
+
+		#footer-links ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		#footer-links ul li {
+			margin: 5px 10px;
+		}
+
+		#footer-links h3 {
+			margin: 5px 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #e1e1e1;
+		}
+
+		#footer-links a {
+			color: #111111;
+			text-decoration: none;
+		}
+
+		form div {
+			margin-bottom: 10px;
+		}
+
+		form label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		form input {
+			width: 98%;
+		}
+			
+
+		form input, form button, form textarea {
+			border: 1px none;
+			padding: 7px;
+			background: #ebebeb;
+		}
+
+		form input:focus, form button:focus, form textarea:focus {
+			background: yellow;
+		}
+
+					
+		._infoBox {
+		    width: 100%;
+		    max-width: 626px;
+		    margin: 1rem auto;
+		    padding: 0 1rem;
+		    font-size: .88em;
+
+		}
+
+
+		.column-2{
+			float: left;
+			width: 24%
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		#contact-form input {
+			padding: 12px 50px;
+			margin: 0;
+		    box-sizing: border-box;
+		    border: none;
+			border: none;
+			background-color: #ebebeb;
+		}
+
+		#contact-form input:hover{
+			background-color: yellow;
+		}
+
+
+		#contact-form textarea:hover{
+			background-color: yellow;
+		}
+
+		#contact-form button:hover{
+			background-color: yellow;
+		}
+
+		#contact-form textarea {
+			border: none;
+			background-color: #ebebeb;
+		}
+
+		.column-wrapper {
+		}
+
+
+		@media (min-width: 768px) {
+			._info-wrapper {
+		    display: flex;
+		    justify-content: space-between;
+			}
+		}
+
+		
+		
+
+
+		#chat{
+			position: fixed;
+			right: 0;
+			top: 40%;
+			background: #333333;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+			justify-content: space-evenly;
+			align-items: center;
+			z-index: 999;
+			border-radius: 8px 0 0 8px;
+			text-transform: uppercase;
+			font-size: 11px;
+			text-align: center;
+			max-width: 70px;
+			box-shadow: 0 0  10px rgba(0, 0, 0, 0.8);
+		}
+
+	
+		.vngage-tab-text {
+			padding: 0;
+			margin: 0;
+		}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header id="main-header" class="clearfix">
+			<b>
+				" SALE - NOW UP TO 70% "
+				<span style="text-transform:; white-space: nowrap"></span>
+			</b>
+			<a href="" class="cmsRibbon-button"><font color="white">SHOP NOW</font>
+			</a>
+		</header>
+
+		<section id="footer-links" class="clearfix">		
+			<div class="container">			
+				<div class="column">
+					<section>
+						<p class="_linkList-title">KUNDSERVICE</p>
+						<nav>
+							<ul>
+								<li><a href="#">kontakta oss</a></li>
+								<li><a href="#">Vanliga frågor & svar</a></li>
+								<li><a href="#">Så handlar du</a></li>
+								<li><a href="#">Betalning</a></li>
+								<li><a href="#">Byte,Retur & Ångerrätt</a></li>
+								<li><a href="#">Återbetalning</a></li>
+								<li><a href="#">Frakt & Leverans</a></li>
+								<li><a href="#">Storleksguide</a></li>
+							</ul>
+						</nav>
+					</section>
+
+					<section>
+						<p>OM OSS</p>
+						<nav>
+							<ul>
+								<li><a href="#">Nyhetsbrev</a></li>
+								<li><a href="#">Lediga tjänster</a></li>
+								<li><a href="#">Om Stayhard</a></li>
+								<li><a href="#">Utmärkelser & Press</a></li>
+								<li><a href="#">Trygg e-handel</a></li>
+								<li><a href="#">Bli affiliate</a></li>
+								<li><a href="#">Hållbarhet</a></li>	
+							</ul>
+						</nav>
+					</section>
+
+					<section>
+						<p>VILKOR</p>
+						<nav>
+							<ul>
+								<li><a href="#">Köpvillkor</a></li>
+								<li><a href="#">Erbjudandevillkor</a></li>
+								<li><a href="#">Cookie Policy</a></li>
+								<li><a href="#">GDPR</a></li>
+								<li><a href="#">#YesStayhard</a></li>
+							</ul>
+						</nav>
+
+					</section>
+
+				</div>
+			</div>
+
+
+			<h1>KONTAKTA OSS</h1>
+		
+			<div class="column2">
+				<div class="column-wrapper">	
+					<section>					
+						<p>Hej!</p>
+						<p>Du kan kontakta oss dygnet runt på vår e-post nedan eller använda formuläret på den här sidan. Svar sker normalt inom 24 timmar på vardagar.
+						</p>
+							
+						<p>E-post: <a href="mailto:kundservice@stayhard.se?body=Hej%20Stayhard!%0A%0A%0A">kundservice@stayhard.se</a> </p>
+						<br/>
+							
+						<p>Vill du ha svar med en gång kan du ringa oss:</p>
+							
+						<p>Telefon: 020 - 55 45 00</p>
+						<p>Öppettider: mån-fre 10:00-14:00</p>
+						<br/>
+						<br/>		
+					</section>
+
+					<div class="container" class="column3">
+						<section id="contact-form" class="card">
+							<form method="post" action="index.html">
+								<div>
+									<form action="/action_page.php">
+										<div class="row">
+											<div class="column-2">
+												<label for="email">E-POST</label>
+												<input type="email" id="email" name="email value="" data-val="true" data-val-email="Förlåt oss, men vi kunde inte läsa din e-post. Har du råkat ange den fel?" required />
+											</div>
+										
+											<div class="column-2">
+												<label for="phone">TELEFON</label>
+												<input type="telefon" name="telefon" value=""required />
+											</div>
+										</div>
+
+										<br/>
+										<label>MEDDELANDE</label>
+										<textarea name="meddelande" id="message" cols="75" rows="6" name="message" data-val="true" data-val-required="Vi behöver något att svara på :-)"></textarea>
+									</form>
+								</div>
+
+								<div>
+									<br/>
+									<button type="submit">SKICKA</button>
+								</div>
+							</form>
+						</section>
+					</div>
+
+					<section>
+						<br/>
+
+						<div class="_infoBox">
+		   			   		<h2>Företagsuppgifter</h2>
+		   			   		<div class="_info-wrapper">
+							    <p><strong>Adress</strong>
+								    <br>
+								    <span class="indent"></span>Stayhard AB<br>
+								    <span class="indent"></span>Box 961<br>
+								    <span class="indent"></span>501 10 Borås
+								</p>
+							    <p><strong>Organisationsnummer</strong>
+							    	<br>
+							    	<span class="indent"></span>
+									556713-8077
+								</p>
+								<p><strong>Växel Ellos Group</strong>
+									<br>
+									<span class="indent"></span>
+									<a href="tel:033-160000">033-16 00 00</a>
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+
+		<div id="chat">
+			<div class="always-visible">
+				<div>
+					<img src="images/question-mark-White.svg" alt="" width="40">			
+				</div>
+
+				<div class="vngage-tab">
+					<p class="vngage-tab-text">vanliga frågor</p>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+</body>
+</html>

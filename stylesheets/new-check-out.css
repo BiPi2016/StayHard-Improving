@@ -1,0 +1,539 @@
+
+* {
+	--off-black: rgba(100, 100, 100, 0.9);
+}
+
+.size-and-availability {
+	flex-wrap: wrap;
+}
+
+main#cout-main-container {
+	padding: 10px;
+	max-width: 676px;
+	margin: 10px auto;
+}
+main > * {
+	margin: 20px auto;
+}
+
+#check-out-heading {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.short-heading-underline {
+	border: 2px solid var(--medium-gray);
+	width: 100px;
+	margin: 20px auto 10px auto;
+}
+
+h2.sub-catagory-heading {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px;
+}
+hr.full-length-thick-ruler {
+	border: 1px solid var(--medium-gray);
+}
+hr.fine-section-divider {
+	border: 0.5px solid var(--medium-gray);
+}
+.product-to-be-checked-out {
+	padding: 10px;
+}
+.discount {
+	padding:15px;
+}
+.slide-toggle {
+	background: var(--light-gray);
+	border-radius: 15px;
+	width: 45px;
+	height: 25px;
+	transition: background 200ms ease-in;
+	display: flex;
+}
+.pusher {
+	width: 0;
+	transition: width 200ms ease-in 0ms;
+}
+.slider-button {
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	border: 2px solid var(--dark-gray);
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+.slider-button:hover {
+	background: var(--light-gray);
+}
+
+
+.checkbox-for-accordion {
+	display: none;
+}
+
+
+.click-triggered-accordion {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-gap: 15px;
+	align-items: center;
+}
+.content-gatherer-rollable {
+	grid-column: 2/-1;
+	transform: scaleY(0);
+	transition: transform 200ms ease-in 0ms ;
+	transform-origin: top;
+}
+.mini-form-wrapper {
+	margin: 15px auto;
+	display: none;
+}
+.field-heading {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.info-collector-mini-form {
+	display: flex;
+}
+.info-collector-mini-form > button {
+	padding: 10px;
+	outline: none;
+}
+.yellow-on-focus {
+	background: var(--light-gray);
+	border: 0;
+	padding: 10px;
+	outline: none;
+	box-sizing: border-box;
+}
+.info-collector-mini-form input[type="text"] {
+	flex-basis: 90%;
+	margin-right: 8px;
+}
+
+.yellow-on-focus:focus {
+	background: var(--our-yellow);
+}
+
+button.gray-button {
+	border: 2px solid var(--medium-gray);
+	color: var(--dark-gray);
+	box-sizing: border-box;
+	background: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	padding: 10px;
+}
+
+.small-screen-only-button {
+	display: block;
+	flex-basis: 10%;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.small-screen-only-button img {
+	width: 20px;
+	object-position: center center;
+	object-fit: contain;
+}
+.desktop-only-button {
+	display: none;
+}
+
+.form-field-explanation-text {
+	font-size: 10px;
+	color: var(--dark-gray);
+	text-decoration: none;
+}
+
+.info-collector-mini-form textarea {
+	width: 100%;
+	background: var(--light-gray);
+}
+
+/*Animation the accordian and the toggle buttons*/
+
+.checkbox-for-accordion:checked ~ label .slide-toggle {
+	background: var(--our-yellow);
+}
+
+.checkbox-for-accordion:checked ~ label .pusher {
+	width: 20px;
+}
+.checkbox-for-accordion:checked ~ .content-gatherer-rollable {
+	transform: scaleY(1);
+}
+
+.checkbox-for-accordion:checked ~ .content-gatherer-rollable .mini-form-wrapper {
+	display: block;
+}
+
+.customer-email-and-postal-code input.yellow-on-focus {
+	width: 100%;
+}
+.customer-email-and-postal-code .user-data {
+	margin: 20px auto;
+}
+
+.invalid-input {
+	color: var(--our-maroon);
+	display: none;
+}
+
+/*User policy section*/
+.user-policy > * {
+	margin: 10px auto;
+	display: none;
+}
+
+#user-policy-link {
+	color: var(--dark-gray);
+	text-decoration: none;
+}
+
+
+.radio-option {
+	display: flex;
+	align-items: center;
+	margin: 15px;
+}
+.darkned-label {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+.customized-radio {
+	border: 1.5px solid var(--dark-gray);
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+}
+.customized-radio-dot {
+	border-radius: 50%;
+	width: 60%;
+	height: 60%; 
+}
+
+.yellow-radio-target-checkbox {
+	display: none;
+}
+.yellow-radio-target-checkbox:checked ~ .customized-radio-dot {
+	background: var(--our-yellow);
+}
+
+/*Styles for delivery partner selection area*/
+.delivery-solutions-wrapper {
+	align-items: flex-start;
+}
+.available-delivery-solution {
+	display: flex;
+	align-items: center;
+}
+.delivery-conditions-quick-list {
+	list-style-position: inside;
+}
+.delivery-cost {
+	margin: 20px auto;
+}
+
+/*Styles for the delivery adress section*/
+.delivery-address {
+	/*display: none;*/
+}
+table#delivery-address {
+	width: calc(100% - 30px);
+	margin: 20px auto 0 auto;
+	font-size: 15px;
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+table#delivery-address caption {
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 5px;
+}
+#delivery-address,
+#delivery-address tr,
+#delivery-address td {
+	border: 0px solid var(--medium-gray);
+	width: 50%;
+	position: relative;
+	border-collapse: collapse;
+}
+#delivery-address td {
+}
+#delivery-address td:hover {
+}
+#delivery-address input {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	box-shadow: none;
+	outline: none;
+	padding: 30px 5px 5px 5px;
+	box-sizing: border-box;
+}
+#delivery-address input:hover {
+	border: 1px solid var(--dark-gray);
+}
+#delivery-address input:focus {
+	border: 1px solid var(--our-maroon);
+}
+#delivery-address input:focus ~ p {
+	transform: scale(0.8);
+}
+
+#delivery-address td p {
+	order: 1;
+	color: var(--dark-gray);
+	margin: 10px 5px 30px 5px;
+	transition: transform 500ms ease-in 0ms;
+	transform-origin: left;
+}
+
+.optional-details {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 2;
+}
+.optional-details img {
+	width: 20px;	
+	z-index: 1;
+}
+.on-hover-help-text {
+	padding: 10px;
+	background: rgba(40, 40 ,40, 1);
+	position: absolute;
+	right: calc(-100% + 5px);
+	transform: translateY(-150%);
+	color: #fff!important;
+	width: 220px;
+	display: none;
+	box-sizing: border-box;
+}
+.on-hover-help-text::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	right: 10px;
+	border: 10px solid;
+	border-color: rgba(40, 40, 40, 1) transparent transparent transparent;
+}
+
+.optional-details img:hover ~ .on-hover-help-text {
+	display: inline-block;	
+}
+
+.klarna-data-and-payment-conditions {
+	display: flex;
+	justify-content: flex-end;
+	color: var(--dark-gray);
+	padding: 0 15px;
+	margin-top: 0px;
+}
+.klarna-data-and-payment-conditions .partners-name {
+	font-weight: bold;
+}
+.klarna-data-and-payment-conditions a {
+	color: inherit;
+	text-decoration: none;
+}
+.klarna-data-and-payment-conditions > * {
+	margin: 3px;
+}
+
+/*Style rules for the green buttons*/
+.customized-green-button {
+	background: var(--light-green);
+	color: #fff;
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+}
+.customized-green-button:hover {
+	cursor: pointer;
+}
+
+/*Invoice Details*/
+#billing-details-checkbox {
+	display: none;
+}
+#billing-details-checkbox:checked ~ .billing-details {  /*Checkbox to show/hide the invoice*/
+	display: block;
+}
+.billing-details {
+	border: 1px solid var(--dark-gray);
+	border-radius: 5px;
+	padding: 15px;
+	margin: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	word-spacing: 1px;
+	/*display: none;*/
+	position: relative;
+}
+.individual-product-cost {
+	margin: 10px auto;
+}
+.invoice-item{
+	color: var(--off-black);
+	font-size: 14px;
+}
+.individual-product-cost {
+	display: flex;
+	justify-content: space-between;
+}
+.payment-details-and-options {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.payment-details-and-options * {
+	text-align: center;
+}
+.billing-details-text {
+	color: var(--dark-gray);
+	font-size: 15px;
+}
+.billing-details-text .billing-details-link{
+	color: #000;
+}
+.billing-details-text .billing-details-link:hover{
+	cursor: pointer;
+}
+#total-cost-in-currency  {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/* The tool-tip like downward tip on the invoice-box */
+/*Both ::after and ::before are required and are layed on upon another with z-index,::before is one pixel less wide than ::after and has white border, ::after has black border*/
+
+.billing-details::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	transform: translateX(-50%);
+	border: 10px solid transparent;
+	border-top-color: black;
+	z-index: 1;
+}
+.billing-details::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 9px solid transparent;
+	border-top-color: #fff;
+	z-index: 2;
+}
+
+.payment-details-and-options .customized-green-button {
+	width: 350px;
+	margin: 10px auto;
+}
+.partners-logos {
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.partners-logos img {
+	margin: 0 10px;
+	object-position: center center;
+	object-fit: cover;
+	width: 40px;
+}
+.use-policy-text {
+	color: var(--dark-gray);
+}
+.use-policy-text a {
+	color: rgba(40, 40, 40, 1);
+}
+
+.klarna-logo-container {
+	width: 120px;
+	height: 40px;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.klarna-logo-container .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.25);
+	z-index: 1;
+}
+.klarna-logo-container img {
+	width: 100%;
+}
+.flashy-background {
+	animation-name: flash-background;
+	animation-duration: 500ms;
+}
+@keyframes flash-background {
+	0% {background: initial;}
+	50% {background: var(--our-maroon);}
+	100% {background: initial;}
+}
+
+@media only screen and (min-width: 768px) {
+	.info-collector-mini-form input[type="text"] {
+		flex-basis: 75%;
+	}	
+	.small-screen-only-button {
+		display: none;
+	}
+	.desktop-only-button {
+		display: block;
+		flex-basis: 25%;
+	}
+	.email-and-postal-code form {
+		display: flex;
+	}
+	.email-and-postal-code form div:nth-of-type(1) {
+		flex-basis: 70%;
+		margin-right: 8px;
+		box-sizing: border-box;
+	}
+}

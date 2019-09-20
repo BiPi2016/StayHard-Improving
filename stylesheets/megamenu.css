@@ -1,0 +1,239 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+:root {
+    --light-gray: #EBEBEB;
+    --medium-gray: #C7C8CA;  
+    --dark-gray: #808285;
+    --light-green: #6eb76e;
+    --light-blue: #1E90FF;
+    --our-yellow: rgba(255, 221, 0, 1);
+}
+
+#toggle-menu:hover {
+	cursor: pointer;
+}
+nav .search-bar-contianer{
+	display: none;
+}
+
+#top-menu {
+	width: 80%;
+	max-width: 380px;
+	flex-direction: column;
+	position: fixed;
+	background: #fff;
+	z-index: 9999998;
+	transition: transform 0.5s;
+	transform: scaleX(0);
+	transform-origin: left;
+}
+.show-main-menu {
+	transform: scaleX(1)!important; /*Must use important, because in previous lines style have been specied using ID which have a higher precedence than class*/
+	flex-direction: column!important;
+	height: 90vh !important;
+	overflow-y: scroll!important;
+	padding: 20px !important;
+	background: #fff!important;
+}
+
+#top-menu * {
+	box-sizing: border-box;
+}
+#top-menu ul {
+	background: #fff;
+}
+
+#top-menu li {
+	list-style: none;
+	line-height: 1.4;
+}
+#top-menu li#sale {
+	order: -1;
+}
+
+#avdelningar {
+	order: -2;
+}
+nav a {
+	text-decoration: none;
+	color: var(--dark-gray);
+	padding: 5px;
+}
+#top-menu .mobile-view-only a {
+	text-transform: capitalize;
+}
+#top-menu .mobile-view-only a.mobile-view-only-header {
+	color: #000;
+	font-weight: bold;
+}
+.top-menu-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.top-menu-item > .top-menu-link {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 10px;
+	border: 2px solid transparent;
+}
+.top-menu-item > .top-menu-link:hover {
+	color: #000;
+}
+.top-menu-item > ul.top-menu-sublist {
+	display: none;
+}
+
+
+.innermost-category {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media (min-width: 968px) {
+	
+}
+
+@media (min-width: 1050px) {
+	#toggle-menu {
+		display: none;
+	}
+
+	nav .search-bar-contianer{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		right: 0;
+		overflow: visible!important;
+		z-index: 9999999;
+	}
+	.mobile-search-field {
+		height: 100%;
+		padding: 10px;
+		border: 2px solid var(--medium-gray);
+	}
+	.mobile-search-field:focus {
+		background: var(--our-yellow);
+		color: #000;
+		transform: scaleX(1.2);
+		transform-origin: right;
+		transition: transform 0.3s linear;
+	}
+	.search-glass {
+		height: 100%;
+		width: 40px;
+		position: absolute;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid;
+		border-color:   var(--medium-gray) var(--medium-gray) var(--medium-gray) transparent;
+		box-sizing: border-box;
+	}
+	.search-glass img {
+		width: 50%;
+		object-fit: contain;
+		display: block;
+	}
+	.search-glass:hover {
+		background: var(--our-yellow);
+	}
+
+	#top-menu {
+		transform: scale(1);
+		transition: 0.0s;
+		margin: auto;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row!important; 
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	#top-menu .mobile-view-only {
+		display: none;
+	}
+	#top-menu li#sale {
+		order: 0;
+	}
+	.top-menu-item#sale > a {
+		color: red;
+	}
+	.top-menu-item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		height: 100%;
+	}
+	#top-menu a {
+		color: inherit;
+	}
+	.top-menu-item > .top-menu-link:hover {
+		border: 2px solid var(--light-gray);
+		z-index: 2;
+		background: #fff;
+	}
+	#new-in-store .top-menu-link:hover,
+	#categories .top-menu-link:hover,
+	#brands .top-menu-link:hover {
+		border-bottom-color: transparent;		
+	}
+
+	.top-menu-item > ul.top-menu-sublist {
+		border: 2px solid var(--light-gray);
+		width: 100%;
+		padding: 30px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		flex-direction: row;
+		justify-content: space-around;
+		transform: translateY(-2px); /*Translates submenu's y-axis 2px up to make the border between the link and submenu disapear*/
+	}
+
+	.top-menu-item > ul.top-menu-sublist:hover {
+		display: flex;
+	}
+
+	.top-menu-item > a:hover ~ ul{
+		display: flex;
+	}
+	
+
+	.top-menu-subcategory {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-bottom: 10px;   /*Latest Edition -- to make different product categories look separate in mobile menu */
+	}
+	.top-menu-subcategory > a {
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+	}
+	/*Gives a yellow background to subcategories in Kategori and Nyheter menus*/
+	.top-menu-subcategory  a:hover {
+		background: var(--our-yellow);
+	}
+	/*Reseting the curson and  background properties for subcategory headings in varumärken menu*/
+	.popular-brands > :hover {
+		background: initial;
+		cursor: auto;
+	}
+	
+	.innermost-category > ul.product-listing {
+		display: none;
+	}
+}

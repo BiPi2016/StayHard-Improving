@@ -1,0 +1,232 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat';
+}
+:root {
+    --light-gray: #EBEBEB;
+    --medium-gray: #C7C8CA;  
+    --dark-gray: #808285;
+    --our-yellow: rgba(255, 221, 0, 1);
+    --small-text: 11px;
+    --light-green: #6eb76e;
+    --light-blue: #1E90FF;
+    --select-padding: 10px;
+}
+
+.customized-select-container {
+	position: relative;
+}
+.customized-select {
+	border: 2px solid var(--medium-gray);
+	padding: var(--select-padding);
+	outline: none;
+}
+.down-arrow-select-button {
+	width: 18px;
+	padding: var(--select-padding);
+	position: absolute;
+	right: 0;
+	background: #fff;
+	border: 2px solid var(--medium-gray);
+	border-left: none;
+	pointer-events: none;
+}
+.down-arrow-select-button img {
+	width: 100%;
+	display: block;
+}
+
+.shoping-bag-wrapper {
+	border: 2px solid var(--medium-gray);
+	max-width: 450px;
+	padding: 5px;
+	font-size: 12px;
+}
+.shoping-bag > * {
+	margin: 10px auto;
+}
+
+.customized-add-to-cart-button {
+	background: var(--light-green);
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px;
+	width: calc(100% - 20px);
+	margin: auto 10px;
+	box-sizing: border-box;
+}
+
+.product-to-be-checked-out {
+	display: flex;
+	line-height: 1.5; 
+}
+.product-to-be-checked-out-image {
+	flex-basis: 30%;
+	background: url('https://cdn.stayhard.com/storage/ma/d83d40cee5d74c36bf35aa4dfd7dee38/5315c5c7ee404d53a6582906bb4579f9/3200-3872-0-jpg.Jpeg/E87590814542F7C633E1CE0A8B82F138195C994E/05851430_display.jpeg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: repeat;
+	padding-bottom: 30%;
+}
+.product-to-be-checked-out-details {
+	flex-basis: 75%;
+}
+.product-brand {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.product-name {
+	text-transform: capitalize;
+}
+.sc-brand-name > p:first-child {
+	margin-bottom: -5px;
+}
+.delete-product-button-container {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+}
+.delete-product-button-container:hover {
+	background: var(--medium-gray);
+}
+.delete-product-button {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+.flexed-block {
+	display: flex;
+	padding: 0 10px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.sc-price-and-other-details > * {
+	margin: 8px auto;
+}
+.size-container .size-text,
+.quantity-container .quantity-text {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+	margin-left: 10px;
+}
+.size-and-availability {
+	justify-content: flex-start;
+}
+.customized-select-container {
+	margin-right: 20px;
+}
+.availability-status::before {
+	content: "\2713";
+	background: var(--light-green);
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	width: 15px;
+	height: 15px;
+	padding: 5px;
+	margin-right: 15px;
+}
+.sc-product-quantity {
+	min-width: 80px;
+}
+.total-cost {
+	width: 100%;
+	background: #fff;
+	border: 2px solid var(--medium-gray);
+	border-collapse: collapse;
+}
+.total-cost tr.all-selected-products-cost th {
+	font-weight: normal;
+}
+.total-cost tr.sc-total-cost {
+	background: var(--light-gray);
+	font-weight: bold;
+	border-top: 2px solid var(--medium-gray);
+}
+.total-cost td,
+.total-cost th {
+	padding: 10px;
+	text-align: right;
+}
+.total-cost th {
+	text-align: left;
+	text-transform: uppercase;
+}
+
+
+.promoted-extras-heading {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	margin:20px auto;
+}
+
+.promoted-extras {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	box-sizing: border-box;
+}
+
+.product-info {
+	overflow-x: hidden;
+
+}
+.product-image {
+	min-height: 170px;
+	max-height: 255px;
+	height: 50%;
+	padding-bottom: 30%;
+}
+.product-brand {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.product-name {
+	text-transform: capitalize;
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.product-price {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.promoted-extras .product-info:nth-of-type(1) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/0a823aef8a4149319d51e4136660daf1/4994f89af5f94d6a826919b0f6740e57/3200-3872-0-jpg.Jpeg/A8AAD28694A54BEE967AEB99F31FED7A97F4096A/10674692_display.jpeg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.promoted-extras .product-info:nth-of-type(2) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/1e5145abaf6e43efbe2ce5cfce85717e/a5fd79c24802449988882c6523def6c0/3200-3872-0-jpg.Jpeg/6197F174FFCF4FE48C02CCCD651DF752838B165B/13072654_display.jpeg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.promoted-extras .product-info:nth-of-type(3) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/ac53d77462644f6c875b185d3448178e/46f10fa485f545dc92e14a077927488d/3200-3872-0-jpg.Jpeg/ACEACCBF0AC58DC57D111982BB41C9B163D35FD9/01373802_display.jpeg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.promoted-extras .product-info:nth-of-type(4) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/4d409e22407f415e92a297bc2cd72d1b/5e68b87e92de4c71838abab8c345ee48/3200-3872-0-jpg.Jpeg/92503BF523406E488438A8443CBE7C8DD773FD42/13072651_display.jpeg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

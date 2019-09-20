@@ -1,0 +1,698 @@
+sub /*Reset */
+* {
+	padding: 0;
+	margin: 0;
+}
+:root {
+    --light-gray: #EBEBEB;
+    --medium-gray: #C7C8CA;  
+    --dark-gray: #808285;
+    --our-yellow: rgba(255, 221, 0, 1);
+    --small-text: 11px;
+    --light-green: #6eb76e;
+    --light-blue: #1E90FF;
+}
+
+body {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+/*custom radio buttons */
+.radio-container {
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	border: 1px solid gray;
+	border-radius: 50%;
+	padding: 5px;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+.custom-radio {
+	width: 60%;
+	height: 60%;
+	border-radius: 50%;
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.normal-radio-button {
+	display: none;
+}
+.normal-radio-button:checked ~ .custom-radio {
+	background: yellow;
+}
+
+
+#discount-reminder {
+	max-width: 1300px;
+	margin: auto;
+	box-sizing: border-box; 
+}
+#discount-reminder .reminder-container {
+	padding: 5px;	
+	background: #000; 
+	color: #fff;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; 
+}
+#discount-reminder p {
+	padding: 5px; 
+	margin: 0 10px;
+	font-weight: bold;
+	word-spacing: 1px;
+	text-align: center;
+}
+#discount-reminder p:last-child {
+	text-transform: uppercase;
+	background: #fff;
+	color: #000;
+}
+#discount-reminder p:last-child:hover {
+	cursor: pointer;
+}
+
+#sub-category-options-container {	
+	padding: 5px;
+	box-sizing: border-box;
+	max-width: 1300px;
+	margin: auto;
+	line-height: 1.5;
+}
+
+#current-sub-category-heading {
+	padding: 5px;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#category-explanation {
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 5px;
+	max-width: 600px;	
+}
+#category-explanation:hover {
+	cursor: pointer;
+}
+.hide-category-explanation {
+	height: 52px;
+	overflow: hidden;
+	background: linear-gradient(var(--dark-gray), var(--dark-gray), transparent);  /*Creates a background with a gradient from gray to transparent*/
+	background-clip: text;  /*Makes the text have gradient from gray to transparent*/
+	-webkit-background-clip: text;
+	color: transparent;	  /*Sets the color to transparent so as to make the affect of background-clip visible in thee text*/
+}
+/*Sets the properties so that the text could be read*/
+.show-category-explanation {
+	background: none;
+	color: var(--dark-gray);
+	height: 100%;
+}
+
+/*Styles the sub-category selected*/
+aside {
+	display: flex;
+	flex-direction: column;
+}
+aside > div.sub-category-menu {
+	width: 100%;
+}
+.sub-category-menu {
+	max-width: 600px;
+	margin: 5px auto;
+	padding: 5px;
+	box-sizing: border-box; 
+}
+
+.sub-category-menu li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+
+.sub-category-menu a {     /*All links in mobile side navigaion*/
+	text-decoration: none;
+	color: var(--dark-gray);
+}
+.sub-category-menu a:hover {
+	color: #000;
+}
+
+
+.sub-category-outer-div {
+	border: 2px solid var(--medium-gray);		
+}
+
+
+.sub-category-selector {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+.sub-category-selector > * {
+	margin: 10px;
+}
+.sub-category-outer-div .sub-category-selector > p:first-child {
+	text-transform: uppercase;	
+	color: var(--dark-gray);
+	font-weight: bold;
+}
+
+.sub-category-selector > .sub-category-toggle-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sub-category-toggle-arrow img {
+	width: 15px;
+	object-fit: contain;
+	object-position: center center;
+}
+
+.hide-sub-category {
+	height: 0;
+}
+.show-sub-category {
+	height: 100%;
+}
+
+.sub-category-outer-div-list {
+	text-transform: uppercase;
+	box-sizing: border-box; 
+	overflow: hidden;
+
+}
+.sub-category-outer-div-list li {
+	list-style: none;
+	margin: 10px;
+	font-size: 11px;
+}
+
+#filter-container {	
+	max-width: 600px; position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start; 
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	color: var(--dark-gray);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 11px;
+}
+#filter-container > * {
+	margin: 5px;
+}
+#filter-container > div:first-child {
+	box-sizing: border-box;
+	flex: 2;
+}
+#filter-container > div:nth-child(2) {
+	flex: 1 1 0;
+}
+
+
+.filter-ul li.filter-option-li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	padding: 5px;
+	margin-right: 0px;
+
+}
+.filter-ul li.filter-option-li:hover {
+	background: var(--our-yellow);
+}
+.filter-ul li.clear-choices:hover {
+	background: none;
+	cursor: pointer;
+}
+.filter-ul li.clear-choices:hover span {
+	color: #000;
+}
+.filter-ul li.filter-option-li:first-child {
+	justify-content: flex-start;
+	color: var(--medium-gray);
+	text-transform: capitalize;
+}
+.filter-ul li.filter-option-li:first-child span:last-child {
+	margin-left: 5px;
+}
+.filter-ul li.filter-option-li span.how-many-left{
+	background: var(--medium-gray); 
+	color:  var(--dark-gray);
+	border-radius: 2px;
+	padding: 0 3px;
+	margin-left: 5px;
+}
+
+
+
+.wrapper {
+	padding: 5px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+}
+.pagination a.pagination-links {
+	background: var(--our-yellow);
+	color: var(--dark-gray);
+	padding: 15px;
+	margin: 3px;
+	text-decoration: none;
+	width: 44px;
+	height: 44px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 2px;
+	display:  none;
+}
+.pagination a.pagination-links:nth-of-type(2),
+.pagination a.pagination-links:last-child {
+	display: block;
+}
+.pagination .pagination-links:hover {
+	color: #000;
+}
+.pagination a.dots {
+	color: #000;
+	background: none;
+}
+.category-why-this-product {
+	border: 2px solid var(--medium-gray);
+	padding: 10px;
+	box-sizing: border-box;
+	max-width: 1300px;
+	margin: auto;
+	line-height: 1.5;
+}
+
+main {
+	max-width: 1300px;
+	margin: auto;	
+}
+.product-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	justify-content: space-between;
+}
+.product-information {
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.product-brand,
+.product-price {
+	font-weight: bold;
+}
+
+.product-gallery article.special-reminder {
+	grid-column: span 2;
+	background: url('https://cdn.stayhard.com/storage/ma/b82e8707a4c847e7b5e7245eebaf500a/84d474b3bd3141459a0d5b1d9b5ec17c/jpg/26FF450447E255247C03F4B12C9E63A7D6B6A60E/v3_Sale7015_wide.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+.product-image {
+	height: 63vw;
+	position: relative;
+}
+
+article:nth-of-type(1) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/4a8aba8af6e744148c52ecb42c0c5795/dec721b1a381431dbf64763d23e87136/3200-3872-0-jpg.Jpeg/311CE616ECA3CC3E6AA1F38DBE409D011A60F4C4/13072662_display.jpeg'), 
+				url('https://cdn.stayhard.com/storage/ma/638e9ce726234a08860e02d6346ab18b/97ab7865ea154ab7be89a8ffd075cab4/3200-3872-0-jpg.Jpeg/3F6C870258A14423A262823A6459D9645345FD21/13072662_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(1) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/638e9ce726234a08860e02d6346ab18b/97ab7865ea154ab7be89a8ffd075cab4/3200-3872-0-jpg.Jpeg/3F6C870258A14423A262823A6459D9645345FD21/13072662_1.jpeg');
+}
+article:nth-of-type(2) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/20378e0cd19b4beb8d8215550ffa9768/045ca259058540b5be23706e5b65a38b/3200-3872-0-jpg.Jpeg/1E30F111207DACA08063FDBAFF7DE7B90073BBCB/44496878_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/3a0734acac824fd8b72537c8cb093e80/f9264c5e0f8a47058316a435eca3da9f/3200-3872-0-jpg.Jpeg/DFC5A596BF0B163F1146884FFFF21F7642DEEB8C/44496878_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(2) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/3a0734acac824fd8b72537c8cb093e80/f9264c5e0f8a47058316a435eca3da9f/3200-3872-0-jpg.Jpeg/DFC5A596BF0B163F1146884FFFF21F7642DEEB8C/44496878_1.jpeg');
+}
+article:nth-of-type(3) .product-image {
+	background: url('../images/products/les-deux.jpeg'), url('https://cdn.stayhard.com/storage/ma/aa6d5235089e48418fed4c614cdf4a71/51c0487fdecc442e8d217943f3ff0944/3200-3872-0-jpg.Jpeg/1A1D9586FAE022E11B5D3229C299733F1A03DE4F/02366235_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(3) .product-image:hover  {
+	background:url('https://cdn.stayhard.com/storage/ma/aa6d5235089e48418fed4c614cdf4a71/51c0487fdecc442e8d217943f3ff0944/3200-3872-0-jpg.Jpeg/1A1D9586FAE022E11B5D3229C299733F1A03DE4F/02366235_1.jpeg');
+}
+article:nth-of-type(4) .product-image {
+	background: url('../images/products/studio-total-red.jpeg'),
+	url('https://cdn.stayhard.com/storage/ma/5356a7a8c24449d48e8e3de0defc0a10/61fd3d53c0cf4ccabaebe30e19dcb6f7/3200-3872-0-jpg.Jpeg/573D55E9FFE58AE7C290D625A5F2784C6537BCEF/10653959_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(4) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/5356a7a8c24449d48e8e3de0defc0a10/61fd3d53c0cf4ccabaebe30e19dcb6f7/3200-3872-0-jpg.Jpeg/573D55E9FFE58AE7C290D625A5F2784C6537BCEF/10653959_1.jpeg');
+}
+article:nth-of-type(5) .product-image {
+	background: url('../images/products/studioTotal-gray.jpg'),
+				url('https://cdn.stayhard.com/storage/ma/6d78e3a23bdc4445b394671902ab3f8b/c927affd51a44154a9afd0de5892bc7d/3200-3872-0-jpg.Jpeg/38443D488818D34D09046E09D356DB52B7B631EB/13235434_2.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(5) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/6d78e3a23bdc4445b394671902ab3f8b/c927affd51a44154a9afd0de5892bc7d/3200-3872-0-jpg.Jpeg/38443D488818D34D09046E09D356DB52B7B631EB/13235434_2.jpeg');
+}
+article:nth-of-type(6) .product-image {
+	background: url('../images/products/knitted-white.jpeg'), url('https://cdn.stayhard.com/storage/ma/51c37ffba3994c648b0a04002503594e/91a01f45fab7427fb26388ddeb1e3819/3200-3871-0-jpg.Jpeg/B0384FF3B446FB9B4D767523A50E0D83EBFB4E4D/10653951_display.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(6) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/51c37ffba3994c648b0a04002503594e/91a01f45fab7427fb26388ddeb1e3819/3200-3871-0-jpg.Jpeg/B0384FF3B446FB9B4D767523A50E0D83EBFB4E4D/10653951_display.jpeg');
+}
+article:nth-of-type(7) .product-image {
+	background: url('../images/products/tiger-of-sweden.jpeg'), url('https://cdn.stayhard.com/storage/ma/c366f452e56243f7977c4701a93d31dd/bc0654b953f34c0599b1526b6114573d/3200-3872-0-jpg.Jpeg/BC0AF3F38E810A012B484C99DB3E2331412DAF12/10646488_image.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(7) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/c366f452e56243f7977c4701a93d31dd/bc0654b953f34c0599b1526b6114573d/3200-3872-0-jpg.Jpeg/BC0AF3F38E810A012B484C99DB3E2331412DAF12/10646488_image.jpeg');
+}
+article:nth-of-type(8) .product-image {
+	background: url('../images/products/sand-navy.jpeg'), url('https://cdn.stayhard.com/storage/ma/f0fc2de917aa48c0b457c12c0b00b017/6368fcd4497649ba96b801e758cba85f/3200-3872-0-jpg.Jpeg/BBC063FC77D4128E0782A223084BFE5E24DEFCE4/10646381_image.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(8) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/f0fc2de917aa48c0b457c12c0b00b017/6368fcd4497649ba96b801e758cba85f/3200-3872-0-jpg.Jpeg/BBC063FC77D4128E0782A223084BFE5E24DEFCE4/10646381_image.jpeg');
+}
+article:nth-of-type(9) .product-image {
+	background: url('../images/products/gant-boots.jpeg'), url('https://cdn.stayhard.com/storage/ma/171108d9170d4f93bf6e96b983746593/faa3a7e3060d44239d4b0643af245fa5/3200-3872-0-jpg.Jpeg/40492CF8ECCCBA96182C64A609B0598BE6BF870E/09558101_2.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(9) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/171108d9170d4f93bf6e96b983746593/faa3a7e3060d44239d4b0643af245fa5/3200-3872-0-jpg.Jpeg/40492CF8ECCCBA96182C64A609B0598BE6BF870E/09558101_2.jpeg');
+}
+article:nth-of-type(10) .product-image {
+	background: url('../images/products/sand-gray.jpeg'), url('https://cdn.stayhard.com/storage/ma/e0360b8733ca407aafce64a43964baf9/806fff3d9d96461795bc9fa739c30ae3/3200-3872-0-jpg.Jpeg/708869ECFA347769940D668F0D2FF2DB52E5745C/10646244_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(10) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/e0360b8733ca407aafce64a43964baf9/806fff3d9d96461795bc9fa739c30ae3/3200-3872-0-jpg.Jpeg/708869ECFA347769940D668F0D2FF2DB52E5745C/10646244_1.jpeg');
+}
+article:nth-of-type(11) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/b82e8707a4c847e7b5e7245eebaf500a/84d474b3bd3141459a0d5b1d9b5ec17c/jpg/26FF450447E255247C03F4B12C9E63A7D6B6A60E/v3_Sale7015_wide.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(11) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/5911a0daff7f4234abd185d9ffde3f84/fada409e6e034591aa3637d7773d9f2d/3200-3872-0-jpg.Jpeg/CAD2D9F6667095126FBF45ACCB4E73165660788F/10646444_2.jpeg');
+}
+article:nth-of-type(12) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/4549c8506441420d9994e83240db71bb/199a9d4a92484a47837561919ae56444/3200-3871-0-jpg.Jpeg/43B61CE0534BD7B172DB3C9CFD46866055A764F6/10646444_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/5911a0daff7f4234abd185d9ffde3f84/fada409e6e034591aa3637d7773d9f2d/3200-3872-0-jpg.Jpeg/CAD2D9F6667095126FBF45ACCB4E73165660788F/10646444_2.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(12) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/5911a0daff7f4234abd185d9ffde3f84/fada409e6e034591aa3637d7773d9f2d/3200-3872-0-jpg.Jpeg/CAD2D9F6667095126FBF45ACCB4E73165660788F/10646444_2.jpeg');
+}
+article:nth-of-type(13) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/516632e77056435f8823d739ac103cc0/f9a2c354a3e14c55869d9a8733ed5407/3200-3872-0-jpg.Jpeg/788662A5FCDA172C75AB4B645169E41BA5588FD4/13367397_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/05b42904780547648ab8958d6457bed6/70974859c5f9425e942d197f5173adb8/3200-3871-0-jpg.Jpeg/C34FD2FB360CB75EC70CEAB0D10799517D5D2B48/13367397_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(13) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/05b42904780547648ab8958d6457bed6/70974859c5f9425e942d197f5173adb8/3200-3871-0-jpg.Jpeg/C34FD2FB360CB75EC70CEAB0D10799517D5D2B48/13367397_1.jpeg');
+}
+article:nth-of-type(14) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/f2ca540392f3425fb06d3c79f94ef4f0/485335368c9b40bf88b570bc1d49b06d/3200-3872-0-jpg.Jpeg/DDAEC07FA1F4EADF123E9D878EB790F89340E8A6/11271775_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/bc019e7377974de9a3297b5681e2df0d/2aa5e5b2b5214f61aa1504697809cda4/3200-3872-0-jpg.Jpeg/7E9178C15D9317F040088252CF04865ACCFD5DDE/11271775_2.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(14) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/bc019e7377974de9a3297b5681e2df0d/2aa5e5b2b5214f61aa1504697809cda4/3200-3872-0-jpg.Jpeg/7E9178C15D9317F040088252CF04865ACCFD5DDE/11271775_2.jpeg');
+}
+article:nth-of-type(15) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/e3ee013525cd476fb54127b92ea91124/cf57dd3b1d124446af0810ddeae41c08/3200-3872-0-jpg.Jpeg/067838662B87FC633BE070CD1EEBB5A50007CE9F/11271730_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/84ee98f0b8c543409e5bd8a86ab857cf/df2033e59ba7401d80f78a0ee32515a3/3200-3872-0-jpg.Jpeg/8C65DF7C2A59BACE3A38F81102E98938E2093FC2/11271730_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(15) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/84ee98f0b8c543409e5bd8a86ab857cf/df2033e59ba7401d80f78a0ee32515a3/3200-3872-0-jpg.Jpeg/8C65DF7C2A59BACE3A38F81102E98938E2093FC2/11271730_1.jpeg');
+}
+article:nth-of-type(16) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/053dcbebd9884b09b3117883d94adff8/222832d393dd47e88432e849af81c4d0/3200-3872-0-jpg.Jpeg/D8FC6A0CF60B7BC2C03E9700219DFBBE4D4B78AD/02366120_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/4ac50ae109834dc3ac1d4447f1e810e9/2a4658631b924582bce0d4464ac4a708/3200-3872-0-jpg.Jpeg/AB4E8A88AD5407B933FEEB702049CA15A3B1E6CD/02366120_image.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(16) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/4ac50ae109834dc3ac1d4447f1e810e9/2a4658631b924582bce0d4464ac4a708/3200-3872-0-jpg.Jpeg/AB4E8A88AD5407B933FEEB702049CA15A3B1E6CD/02366120_image.jpeg');
+}
+article:nth-of-type(17) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/93c88d8df76f4a84a3cc8299e9e36b4a/6545e1908cdb4a23bee1385b9fcfc182/3200-3872-0-jpg.Jpeg/F5D93676CA53EE8F8847078D7B16CD63FB31DA5F/10653837_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/ecb215d35196482793390d281da921c4/1883feedf67e4afb8662a9b397e95e53/3200-3872-0-jpg.Jpeg/5B606A663E2D1BAC92D71FEDCF1636499D7D0539/10653837_1.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(17) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/ecb215d35196482793390d281da921c4/1883feedf67e4afb8662a9b397e95e53/3200-3872-0-jpg.Jpeg/5B606A663E2D1BAC92D71FEDCF1636499D7D0539/10653837_1.jpeg');
+}
+article:nth-of-type(18) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/8f6633f637ca49eb87adee1b3cbfacc8/94d18bf9e3a8470088c3ec930f8e1dcd/jpg/1C1495B9067E6BEB9955B2965FE3827F6FE66222/13235383_display.jpg'),
+				url('https://cdn.stayhard.com/storage/ma/30a132a124654146b18f9ea425c1eaf6/c60cbaf224904bc089240ffd322b8b4e/3200-3872-0-jpg.Jpeg/1358ECC0ED093E6D351F5CD82922591B404FB680/13235383_image.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(18) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/30a132a124654146b18f9ea425c1eaf6/c60cbaf224904bc089240ffd322b8b4e/3200-3872-0-jpg.Jpeg/1358ECC0ED093E6D351F5CD82922591B404FB680/13235383_image.jpeg');
+}
+article:nth-of-type(19) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/47e39d0561a640478de036674c41e2ef/a223132ef75447eb80438b534d12bf7c/3200-3872-0-jpg.Jpeg/BDCE6D98722DEFB65A868E5ABF58B792C01F0C9C/11271699_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/059f606b5e2046c7a2c8c63d7be8086f/087dd3be03f948509cae9fbf6158f3fd/3200-3872-0-jpg.Jpeg/7828EBDD853564420911D986F69FE60766B16223/11271699_2.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(19) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/059f606b5e2046c7a2c8c63d7be8086f/087dd3be03f948509cae9fbf6158f3fd/3200-3872-0-jpg.Jpeg/7828EBDD853564420911D986F69FE60766B16223/11271699_2.jpeg');
+}
+article:nth-of-type(20) .product-image {
+	background: url('https://cdn.stayhard.com/storage/ma/d580e70472c345448741c65b405d9d57/f4a07f52700f4dffbeffa1c251fd9e55/3200-3872-0-jpg.Jpeg/3461D5D41D97F8DE86EF9485CBF9179821382FEB/11271728_display.jpeg'),
+				url('https://cdn.stayhard.com/storage/ma/56f842cc3ae046eebee28fb354270934/a0981592f037467980ceaa186bbfce9c/3200-3872-0-jpg.Jpeg/99938638CD29BB3F48AACEFE849400BEB2DA322F/11271728_2.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+article:nth-of-type(20) .product-image:hover  {
+	background: url('https://cdn.stayhard.com/storage/ma/56f842cc3ae046eebee28fb354270934/a0981592f037467980ceaa186bbfce9c/3200-3872-0-jpg.Jpeg/99938638CD29BB3F48AACEFE849400BEB2DA322F/11271728_2.jpeg');
+}
+
+@media (min-width: 768px) {
+	.product-gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.product-image {
+		height: 42vw;	
+	}
+	.pagination a.pagination-links:nth-of-type(3) {
+		display: block;
+	}
+}
+
+@media (min-width: 960px) {
+	.product-image {
+		height: 24vw;	
+	}
+	.pagination a.pagination-links {
+		display: block;
+	}
+
+	.top-level-container {
+		display: grid;
+		grid-template-columns: minmax(200px, 200px) 1fr;
+		padding: 10px;
+		align-items: start;
+		max-width: 1300px;
+		margin: auto;
+	}
+	.top-level-container section:last-child {
+		align-self: start;
+		height: 100%;
+	}
+
+
+/*Organizes the container for filters, side navigation and main area*/		
+	#sub-category-options-container {	
+		position: relative;
+
+	} 
+
+	.page-map {  /* Area showing which part of the site user is visiting at the moment */
+
+	}
+	#current-sub-category-heading {
+		align-self: flex-start;
+		text-align: left;
+	}
+
+	#filter-container {   /*Styles how the filters are organized and displayed*/
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 200px;
+		z-index: 2;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	#filter-container > div:last-child {
+		display: flex;
+	}
+	#filter-container > div:first-child {
+		grid-column-end: -1;
+		order: 1;
+		margin-right: 0px;
+	}
+
+	.order-by {
+		background: #fff;
+	}
+	.order-by-li {
+		margin-right: 0px!important;
+	}
+	.order-by-li:hover {
+		background: var(--light-blue);
+		color: #fff;
+		font-weight: bold;
+	}
+	main {
+		position: relative;
+		top: 50px;
+	}
+
+/*Styles filters */
+	.all-filters-desktop {
+		border: none; position: relative;
+		background: none;
+	}
+	.all-filters-desktop > div:first-child {
+		display: none;
+	}	
+	.filter-categories {
+		height: 100%;
+	}
+	.filter-categories > ul {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.sub-category-outer-div-list li {
+		list-style: none; 
+		margin: 0px 10px 10px 0px;
+	}
+	.order-by li {
+		padding: 5px; 
+	}
+
+/*Styles the side navigation*/
+	aside {
+		margin-top: 36px;
+	}
+	.sub-category-menu {
+		order: -1;
+	}
+	.sub-category-menu .top-menu-subcategory {
+		margin-bottom: 10px;
+	}
+	.sub-category-menu .top-menu-subcategory  li a {
+		margin: 0 10px ;
+	}
+	.sub-category-menu .top-menu-subcategory  li li a {
+		margin: 5px 15px ;
+	}
+
+	.sub-category-menu .top-menu-subcategory > a {
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}	
+
+	.sub-category-menu > ul > li:nth-of-type(6) a,
+	.sub-category-menu > ul > li:nth-of-type(7) a,
+	.sub-category-menu > ul > li:last-child {
+		padding: 0;
+		margin-bottom: 10px;
+		color: var(--dark-gray) !important;
+		font-weight: bold;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	.sub-category-menu .top-menu-subcategory  a:hover,
+	.sub-category-menu > ul > li:nth-of-type(6)  a:hover,
+	.sub-category-menu > ul > li:nth-of-type(7)  a:hover,
+	.sub-category-menu > ul > li:last-child:hover {
+		background: none;
+		color: #000 !important;
+	}
+
+	.sub-category-menu .top-menu-subcategory ul { /*Hides subcategories in sidenavigation by default*/
+		display: none;
+	}
+	/*.sub-category-menu .top-menu-subcategory > a:hover ~ ul{
+		display: initial;
+	}*/
+
+	.wrapper {
+		padding-right: 0px;
+	}
+
+
+	#category-explanation {   /*Last text container*/
+		background: none;
+		color: var(--dark-gray);
+		height: 100%;
+		border: 1px solid var(--medium-gray);
+		border-right: none;
+		border-left: none;
+	}
+	
+
+	.product-gallery {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media (min-width: 1050px) {
+	.product-image {
+		height: 25vw;
+		max-height: 350px;
+		width: 16%-80px;	
+	}
+	.reminder-container {
+		margin: 10px 5px;
+	}
+
+}
