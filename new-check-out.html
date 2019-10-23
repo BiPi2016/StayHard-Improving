@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/megamenu.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/shoping-cart.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/footer-style.css">
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/new-shoping-cart.css">
@@ -690,8 +691,111 @@
 
 	<div id="body-overlay"></div>
 
+	
 
-	<main id="cout-main-container">
+		<div id="shoping-bag-container" >
+		<section class="sc-shoping-cart">		
+			<button class="sc-add-to-cart-customized" onclick="window.open('new-check-out.html', '_self')">
+				<a href="./new-check-out.html">Till Kassan</a>		
+			</button>
+		
+			<section class="sc-selected-products">
+				<div class="sc-product-image-container">
+					<img src="images/shoping-cart/socks.jpeg">
+				</div>
+				<div class="sc-product-size-price">
+					<div class="sc-chosen-product sc-flex-container">
+						<div class="sc-wrapper">
+							<p>LEVI'S</p>
+							<p>168SF Low Cut 3-pack Socks 300 </p>
+							<p>White</p>
+						</div>
+						<div class="sc-trash-bin"><img src="images/shoping-cart/garbage.svg"></div>
+					</div>
+
+					<section class="sc-size-and-quantity">
+						<p class="sc-selected-sub-heading">storlek</p>
+						<div class="sc-selected-product-size sc-flex-container">
+							<div class="sc-shoping-cart-size-container sc-sizes-only">
+								<div id="side-nav-heading">
+									<span>41-46</span>
+									<img src="images/shoping-cart/down-arrow.svg" class="sc-arrow">
+								</div>
+								<ul class="sc-list-container">
+									<li>41-46</li>
+								</ul>
+							</div>
+							<span><p class="sc-stock-availablity">I lager</p></span>
+						</div>
+
+						<p class="sc-selected-sub-heading">antal</p>
+						<div class="sc-selected-quantity-price sc-flex-container">
+							<div class="sc-shoping-cart-size-container">
+								<div id="side-nav-heading">
+									<span>1</span>
+									<img src="images/shoping-cart/down-arrow.svg" class="sc-arrow">
+								</div>
+								<ul class="sc-list-container">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<li>6</li>
+									<li>7</li>
+								</ul>
+							</div>
+							<p class="sc-selected-price">89 kr</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<table>
+				<tr>
+					<th class="sc-type-1">VAROR:</th>
+					<td class="sc-type-2">0 kr</td>
+				</tr>
+				<tr>
+					<th class="sc-type-1">SUMMA:</th>
+					<td class="sc-type-2">0 kr</td>
+				</tr>
+			</table>
+
+			<hr class="sc-thick-divider">
+
+			<h2 id="glom-inte">GLÖM INTE:</h2>
+				
+			<section class="sc-dont-forget-images">
+				<div class="sc-dont-forget-product">
+					<div class="sc-product-image-container"><img src="images/shoping-cart/men.jpeg"></div>
+					<p class="sc-brand">just for men</p>
+					<p class="sc-product-name">Dark Brown-Bread </p>
+					<p class="sc-product-cost">129 kr</p>
+				</div>	
+				<div class="sc-dont-forget-product">
+					<div class="sc-product-image-container"><img src="images/shoping-cart/socks.jpeg"></div>
+					<p class="sc-brand">Levi's</p>
+					<p class="sc-product-name">168SF Low Cut 3-pack Socks 300</p>
+					<p class="sc-product-cost">89 kr</p>
+				</div>
+				<div class="sc-dont-forget-product">
+					<div class="sc-product-image-container"><img src="images/shoping-cart/perfym.jpeg"></div>
+					<p class="sc-brand">BOSS</p>
+					<p class="sc-product-name">Boss The Scent EDT 50 ml</p>
+					<p class="sc-product-cost">640 kr</p>
+				</div>
+				<div class="sc-dont-forget-product">
+					<div class="sc-product-image-container"><img src="images/shoping-cart/01373464_display.jpeg"></div>
+					<p class="sc-brand">LEVI'S</p>
+					<p class="sc-product-name">168SF Low Cut 3-pack Socks 300 Gray</p>
+					<p class="sc-product-cost">89 kr</p>
+				</div>			
+			</section>
+		</section>
+	</div>	
+
+
+	<main id="main-container">
 		<h1 id="check-out-heading">kassa</h1>
 		<hr class="short-heading-underline" />
 
@@ -1160,6 +1264,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/ex-landing-page-scripts.js"></script>
+	<script type="text/javascript" src="scripts/shoping-cart.js"></script>
 	<script type="text/javascript" src="scripts/new-check-out.js"></script>
 
 </body>
