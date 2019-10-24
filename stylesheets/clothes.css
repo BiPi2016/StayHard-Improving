@@ -330,7 +330,7 @@ main {
 
 .product-gallery article.special-reminder {
 	grid-column: span 2;
-	background: url('https://cdn.stayhard.com/storage/ma/b82e8707a4c847e7b5e7245eebaf500a/84d474b3bd3141459a0d5b1d9b5ec17c/jpg/26FF450447E255247C03F4B12C9E63A7D6B6A60E/v3_Sale7015_wide.jpg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-position: center center;
 	background-size: cover;
 }
@@ -416,7 +416,7 @@ article:nth-of-type(9) .product-image:hover  {
 	background: url('../images/products/gant_back.jpg');
 }
 article:nth-of-type(10) .product-image {
-	background: url('../images/products/kavaj-gray.jpeg'), url('../images/products/kavaj-gray_back.jpg');
+	background: url('../images/products/kavaj-gray.jpg'), url('../images/products/kavaj-gray_back.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -424,93 +424,84 @@ article:nth-of-type(10) .product-image:hover  {
 	background: url('../images/products/kavaj-gray_back.jpg');
 }
 article:nth-of-type(11) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/b82e8707a4c847e7b5e7245eebaf500a/84d474b3bd3141459a0d5b1d9b5ec17c/jpg/26FF450447E255247C03F4B12C9E63A7D6B6A60E/v3_Sale7015_wide.jpg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(11) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/5911a0daff7f4234abd185d9ffde3f84/fada409e6e034591aa3637d7773d9f2d/3200-3872-0-jpg.Jpeg/CAD2D9F6667095126FBF45ACCB4E73165660788F/10646444_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(12) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/4549c8506441420d9994e83240db71bb/199a9d4a92484a47837561919ae56444/3200-3871-0-jpg.Jpeg/43B61CE0534BD7B172DB3C9CFD46866055A764F6/10646444_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/5911a0daff7f4234abd185d9ffde3f84/fada409e6e034591aa3637d7773d9f2d/3200-3872-0-jpg.Jpeg/CAD2D9F6667095126FBF45ACCB4E73165660788F/10646444_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(12) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/5911a0daff7f4234abd185d9ffde3f84/fada409e6e034591aa3637d7773d9f2d/3200-3872-0-jpg.Jpeg/CAD2D9F6667095126FBF45ACCB4E73165660788F/10646444_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(13) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/516632e77056435f8823d739ac103cc0/f9a2c354a3e14c55869d9a8733ed5407/3200-3872-0-jpg.Jpeg/788662A5FCDA172C75AB4B645169E41BA5588FD4/13367397_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/05b42904780547648ab8958d6457bed6/70974859c5f9425e942d197f5173adb8/3200-3871-0-jpg.Jpeg/C34FD2FB360CB75EC70CEAB0D10799517D5D2B48/13367397_1.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(13) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/05b42904780547648ab8958d6457bed6/70974859c5f9425e942d197f5173adb8/3200-3871-0-jpg.Jpeg/C34FD2FB360CB75EC70CEAB0D10799517D5D2B48/13367397_1.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(14) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/f2ca540392f3425fb06d3c79f94ef4f0/485335368c9b40bf88b570bc1d49b06d/3200-3872-0-jpg.Jpeg/DDAEC07FA1F4EADF123E9D878EB790F89340E8A6/11271775_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/bc019e7377974de9a3297b5681e2df0d/2aa5e5b2b5214f61aa1504697809cda4/3200-3872-0-jpg.Jpeg/7E9178C15D9317F040088252CF04865ACCFD5DDE/11271775_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(14) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/bc019e7377974de9a3297b5681e2df0d/2aa5e5b2b5214f61aa1504697809cda4/3200-3872-0-jpg.Jpeg/7E9178C15D9317F040088252CF04865ACCFD5DDE/11271775_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(15) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/e3ee013525cd476fb54127b92ea91124/cf57dd3b1d124446af0810ddeae41c08/3200-3872-0-jpg.Jpeg/067838662B87FC633BE070CD1EEBB5A50007CE9F/11271730_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/84ee98f0b8c543409e5bd8a86ab857cf/df2033e59ba7401d80f78a0ee32515a3/3200-3872-0-jpg.Jpeg/8C65DF7C2A59BACE3A38F81102E98938E2093FC2/11271730_1.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(15) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/84ee98f0b8c543409e5bd8a86ab857cf/df2033e59ba7401d80f78a0ee32515a3/3200-3872-0-jpg.Jpeg/8C65DF7C2A59BACE3A38F81102E98938E2093FC2/11271730_1.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(16) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/053dcbebd9884b09b3117883d94adff8/222832d393dd47e88432e849af81c4d0/3200-3872-0-jpg.Jpeg/D8FC6A0CF60B7BC2C03E9700219DFBBE4D4B78AD/02366120_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/4ac50ae109834dc3ac1d4447f1e810e9/2a4658631b924582bce0d4464ac4a708/3200-3872-0-jpg.Jpeg/AB4E8A88AD5407B933FEEB702049CA15A3B1E6CD/02366120_image.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(16) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/4ac50ae109834dc3ac1d4447f1e810e9/2a4658631b924582bce0d4464ac4a708/3200-3872-0-jpg.Jpeg/AB4E8A88AD5407B933FEEB702049CA15A3B1E6CD/02366120_image.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(17) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/93c88d8df76f4a84a3cc8299e9e36b4a/6545e1908cdb4a23bee1385b9fcfc182/3200-3872-0-jpg.Jpeg/F5D93676CA53EE8F8847078D7B16CD63FB31DA5F/10653837_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/ecb215d35196482793390d281da921c4/1883feedf67e4afb8662a9b397e95e53/3200-3872-0-jpg.Jpeg/5B606A663E2D1BAC92D71FEDCF1636499D7D0539/10653837_1.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(17) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/ecb215d35196482793390d281da921c4/1883feedf67e4afb8662a9b397e95e53/3200-3872-0-jpg.Jpeg/5B606A663E2D1BAC92D71FEDCF1636499D7D0539/10653837_1.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(18) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/8f6633f637ca49eb87adee1b3cbfacc8/94d18bf9e3a8470088c3ec930f8e1dcd/jpg/1C1495B9067E6BEB9955B2965FE3827F6FE66222/13235383_display.jpg'),
-				url('https://cdn.stayhard.com/storage/ma/30a132a124654146b18f9ea425c1eaf6/c60cbaf224904bc089240ffd322b8b4e/3200-3872-0-jpg.Jpeg/1358ECC0ED093E6D351F5CD82922591B404FB680/13235383_image.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(18) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/30a132a124654146b18f9ea425c1eaf6/c60cbaf224904bc089240ffd322b8b4e/3200-3872-0-jpg.Jpeg/1358ECC0ED093E6D351F5CD82922591B404FB680/13235383_image.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(19) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/47e39d0561a640478de036674c41e2ef/a223132ef75447eb80438b534d12bf7c/3200-3872-0-jpg.Jpeg/BDCE6D98722DEFB65A868E5ABF58B792C01F0C9C/11271699_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/059f606b5e2046c7a2c8c63d7be8086f/087dd3be03f948509cae9fbf6158f3fd/3200-3872-0-jpg.Jpeg/7828EBDD853564420911D986F69FE60766B16223/11271699_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(19) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/059f606b5e2046c7a2c8c63d7be8086f/087dd3be03f948509cae9fbf6158f3fd/3200-3872-0-jpg.Jpeg/7828EBDD853564420911D986F69FE60766B16223/11271699_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 article:nth-of-type(20) .product-image {
-	background: url('https://cdn.stayhard.com/storage/ma/d580e70472c345448741c65b405d9d57/f4a07f52700f4dffbeffa1c251fd9e55/3200-3872-0-jpg.Jpeg/3461D5D41D97F8DE86EF9485CBF9179821382FEB/11271728_display.jpeg'),
-				url('https://cdn.stayhard.com/storage/ma/56f842cc3ae046eebee28fb354270934/a0981592f037467980ceaa186bbfce9c/3200-3872-0-jpg.Jpeg/99938638CD29BB3F48AACEFE849400BEB2DA322F/11271728_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 article:nth-of-type(20) .product-image:hover  {
-	background: url('https://cdn.stayhard.com/storage/ma/56f842cc3ae046eebee28fb354270934/a0981592f037467980ceaa186bbfce9c/3200-3872-0-jpg.Jpeg/99938638CD29BB3F48AACEFE849400BEB2DA322F/11271728_2.jpeg');
+	background: url('../images/products/sth_7009915-03_Bm_M0027533.jpg');
 }
 
 @media (min-width: 768px) {
